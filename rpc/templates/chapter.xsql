@@ -1,0 +1,161 @@
+<?xml version = '1.0'?>
+<!DOCTYPE sqlschema [
+	<!ENTITY rfcd_codes SYSTEM "rfcd_codes.xml">
+	<!ENTITY vrii_codes SYSTEM "vrii_codes.xml">
+	<!ENTITY author_codes SYSTEM "author_codes.xml">
+	<!ENTITY gender_codes SYSTEM "gender_codes.xml">
+	<!ENTITY month_codes SYSTEM "month_codes.xml">
+	<!ENTITY year_codes SYSTEM "year_codes.xml">
+	<!ENTITY group_codes SYSTEM "group_codes.xml">
+	<!ENTITY rsc_codes SYSTEM "rsc_codes.xml">
+]>
+<sqlschema database="publications">
+   &gender_codes;
+   &month_codes;
+   &year_codes;
+   &group_codes;
+   &author_codes;
+   &vrii_codes;
+   &rfcd_codes;
+   &rsc_codes;
+ <table  name="chapter"
+ 			where="'(first_author_stnumber=\''.$edit_author_stnumber.'\')or(stnumber like \'%'.$edit_author_stnumber.'%\')'"
+ 			order="primary_checked,school_checked,create_timestamp"
+ 			validation-displayed="false"
+ 			validation-enforced="false"
+ 			label="Book Chapter"
+ 			completionScript="common/jx_complete.js">
+  <list-type name="rfcd-list">
+  	<field name="rfcd_code" type="tinytext" width="33" maxwidth="10">Research field<documentation>Insert the RMIT RFCD
+  	 code for the&lt;br&gt;most appropriate research field or fields.&lt;br&gt;The full list of RFCD codes can be&lt;br&gt;found
+  	 <a href="http://www.rmit.edu.au/browse;ID=sysybiltujyv;STATUS=A?QRY=rfcd&amp;STYPE=ENTIRE" target="_blank">here</a>.</documentation></field>
+  	<field name="rfcd_split" type="int" midval="''" minval="1" maxval="100" width="17" maxlength="3">% split<documentation>The proportion of the&lt;br&gt;publication
+  	  devoted&lt;br&gt; to this field.</documentation></field>
+  </list-type>
+  <list-type name="author-list">
+  	<field name="stnumber" type="tinytext" width="10" maxlength="30"
+  			onChange="value=value.toLowerCase();"
+   		>Staff/Student Number</field>
+  	<field name="surname" type="tinytext" width="20" maxlength="60"
+			completionClass="jxComplete"
+ 			matchUrlPath="completion.php"
+  			matchCompare="stnumber,firstname,surname"
+  			matchComplete="stnumber,firstname,surname,author_title,gender,type,school_code,school_org_name"
+  			matchLabel="$row->title.' '.$row->firstname.' '.$row->surname"
+  			matchUrlMatchField="match_field"
+  			matchUrlFetchField="fetch_field"
+  			matchUrlValueField="match_text"
+  			matchFillTable="authors"
+  			matchFillRowCompare="stnumber,firstname,surname"
+  			matchQueryBase="'table=authors'"
+  		>Surname<documentation>Type a few letters to match first name, surname, or staff number of 
+  		known authors.</documentation></field>
+  	<field name="firstname" type="tinytext" width="20" maxlength="60">Firstname</field>
+  	<field name="author_title" type="tinytext" width="3" maxlength="5">Title</field>
+  	<field name="gender" type="gender-type">Gender</field>
+  	<field name="type" type="author-type">Type</field>
+  	<field name="school_code" type="rsc-type">School Name<documentation>If internal to RMIT, else leave as "Other". These names
+  		correspond precisely to RMIT RSC codes</documentation></field>
+  	<field name="school_org_name" type="tinytext" width="30" maxlength="60">School or Organization Name<documentation>If
+  		external to RMIT</documentation></field>
+  </list-type>
+  <enum-type name="chapter-material-type">
+  	 <value name="none"></value>
+  	 <value name="chapter">Copy of book chapter</value>
+  	 <value name="cover">Copy of book cover</value>
+  	 <value name="intro">Copy of introduction/preface</value>
+  	 <value name="contents">Copy of table of contents</value>
+  	 <value name="name">Copy of page showing name of book</value>
+  	 <value name="editor">Copy of page showing editor of book</value>
+  	 <value name="publisher">Copy of page showing publisher of book</value>
+  	 <value name="year">Copy of page showing year published</value>
+  	 <value name="rmit">Copy of page showing work undertaken in authors capacity at RMIT</value>
+  	 <value name="frontimg">Leading image</value>
+  	 <value name="img">Image</value>
+  	 <value name="media">Media file</value>
+  	 <value name="other">Other</value>
+  </enum-type>
+  <list-type name="chapter-material-list" size="10">
+  	<field name="material" type="upload" width="70" maxlength="255"
+  		base="'ch'.($schema_edit_scripting?$row->code:($schema_edit_updating?$code:($schema_edit_inserting?$schema_edit_auto_increment:0)))"
+  		fixed="false">Materials to Upload</field>
+  	<field name="material_kind" type="chapter-material-type" fixed="false">Type</field>
+  	<field name="material_checked" type="bool" hidden="true" value="false">Checked</field>
+  </list-type>
+  <field name="code" type="integer" hidden="true" qualifiers="not null auto_increment primary key" key="primary"></field>
+  <field name="first_author_stnumber" type="tinytext" hidden="true" fixed="true" expression="($schemaEditAction=='Insert item')?$edit_author_stnumber:NULL">Principle Author</field>
+  <field name="title" type="tinytext" width="80" maxlength="200" key="secondary">Chapter title</field>
+  <field name="book_title" type="tinytext" width="80" maxlength="200" key="secondary">Book title</field>
+  <field name="publisher" type="tinytext" width="50" maxlength="100">Publisher</field>
+  <field name="publication_place" type="tinytext" width="30" maxlength="100">Place of Publication</field>
+  <field name="publication_year" type="year-type" value="" width="4" maxlength="4">Publication Year</field>
+  <field name="publication_month" type="month-type" value="none">Publication Month (if relevant)</field>
+  <field name="isbn" type="tinytext" width="15" maxlength="30" key="secondary">ISBN</field>
+  <field name="n_chapters" type="integer" width="3" maxlength="5">Total number of chapters in book</field>
+  <field name="start_page" type="tinytext" width="10" maxlength="20">First Page</field>
+  <field name="end_page" type="tinytext" width="10" maxlength="20">Last page</field>
+  <field name="keywords" type="tinytext" width="80" maxlength="250">Keywords (space or comma separated)</field>
+  <field name="author" type="author-list">Authors of Article<documentation>Note that co-authors from RMIT who are
+  	registered with this system will not be able to co-edit this submission unless their staff numbers are added
+  	here.&lt;br&gt;Student numbers may be found	by name on <a href="https://iexplore.rmit.edu.au/iexplore/Login.aspx" target="_blank">RMIT iexplore</a>.
+  	</documentation></field>
+  <field name="rfcd" type="rfcd-list">Research Fields of Book<documentation>Please add at the RFCD code for at least one
+  	research field and ensure that&lt;br&gt;the "% split" column totals to 100. If you do not know the appropriate code/s,&lt;br&gt;
+  	it is	a simple matter to cut and paste it
+  	from<a href="http://www.rmit.edu.au/browse;ID=sysybiltujyv;STATUS=A?QRY=rfcd&amp;STYPE=ENTIRE" target="_blank">
+  	the official RMIT RFCD page</a></documentation></field>
+  <field name="material" type="chapter-material-list">Supporting materials<documentation>These are
+  	intended as an alternative to the provision of hardcopy materials. If it is difficult to provide a
+  	validating document&lt;br&gt;in a digital form, you may need to contact the school and/or portfolio administrator
+  	for other arrangements.</documentation></field>
+  <field name="vrii" type="vrii-type">Virtual Research Innovation Institution (VRII)</field>
+  <field name="web" type="tinytext" width="40" maxlength="140">Web Address For Related Materials (Optional)</field>
+  <field name="research_group" type="research-group-type">Research Group (optional)<documentation>This field is
+  	not used in the evaluation of the publication.It is an informative field intended for other web pages within
+  	RMIT that reference this database.</documentation></field>
+  <field name="description" type="text" width="70" height="6">Description of paper (Optional)<documentation>This
+  	field is not used in evaluating the chapter. It is provided to give a user-friendly overview of the
+  	chapter for other web pages within RMIT that reference this database.</documentation></field>
+  <field name="pwi_code" type="tinytext" fixed="!($admin_edit)">PWI code</field>
+  <field name="first_author_checked" type="bool" fixed="false" hidden="true">Principal RMIT Author Check</field>
+  <field name="primary_checked" type="bool" fixed="(!($admin_edit))" key="secondary">Primary Check<documentation>Indicates that the
+  	publication has been evaluated and passed initial checks.</documentation></field>
+  <field name="primary_comment" type="text" width="70" height="6" fixed="(!($admin_edit))">Primary Comments<documentation>Any remarks
+  	or requirements by the academic making primary checks that will bring this submission to an acceptable
+  	level of verifiable documentation.</documentation></field>
+  <field name="school_checked" type="bool" fixed="(!($admin_edit))" key="secondary">School Check<documentation>Indicates that the
+  	publication has been evaluated and passed by an administrator at the school level.</documentation></field>
+  <field name="school_comment" type="text" width="70" height="6" fixed="(!($admin_edit))">School Comments<documentation>Any remarks
+  	or requirements by the school that will bring this submission to an acceptable
+  	level of verifiable documentation.</documentation></field>
+  <field name="portfolio_checked" type="bool" hidden="true" fixed="(!($admin_edit))">Portfolio Check<documentation>Indicates that the
+  	publication has been evaluated and passed by an administrator at the portfolio level.</documentation></field>
+  <field name="portfolio_comment" type="text" width="70" height="6" hidden="true" fixed="(!($admin_edit))">Portfolio Comments<documentation>Any remarks
+  	or requirements by the portfolio that will bring this submission to an acceptable
+  	level of verifiable documentation.</documentation></field>
+  <field name="create_timestamp" type="datetime" hidden="true" fixed="true" expression="($schemaEditAction=='Insert item')?date('YmdHis'):NULL"></field>
+  <field name="edit_timestamp" type="datetime" hidden="true" fixed="true" expression="date('YmdHis')"></field>
+  <validation>
+  	I, as the first named RMIT author of this book, confirm the following:
+    <ol>
+    The book:
+      <li>This publication meets the DEST definition of research.</li>
+      <li>This publication was published in 2005.</li>
+      <li>This publication is a major work of scholarship.</li>
+      <li>This publication was written entirely by a single author, or joint by authors who share responsibility for the whole book.</li>
+      <li>This publication was published by a commercial publisher.</li>
+      <li>This publication is offered for sale:<ol>
+          <li>for hard copies - bound; or</li>
+          <li>for CD-ROMs - packaged; or</li>
+          <li>for e-books - on a subscription or fee basis.</li>
+        </ol>
+      </li>
+      <li>This publication has an ISBN (International Standard Book Number)</li>
+    The book chapter:
+      <li>The research for this publication was undertaken in my capacity as a staff member or student of RMIT University.</li>
+      <li>This publication meets the DEST definition of research.</li>
+      <li>This is the first time this publication has been submitted for inclusion in the DEST Research Publications Collection and that it is mainly unpublished material, making a substantial contribution to knowledge.</li>
+    </ol>
+  </validation>
+ </table>
+</sqlschema>

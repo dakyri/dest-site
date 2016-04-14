@@ -1,0 +1,4 @@
+  <enum-type name="month-type" fixed="true">
+  	 <value name="none"></value>
+  	 <value name="jan">January</value>
+  </enum-type>

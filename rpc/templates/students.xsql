@@ -1,0 +1,62 @@
+<?xml version = '1.0'?>
+<!DOCTYPE sqlschema [
+	<!ENTITY author_codes SYSTEM "author_codes.xml">
+	<!ENTITY gender_codes SYSTEM "gender_codes.xml">
+	<!ENTITY rsc_codes SYSTEM "rsc_codes.xml">
+	<!ENTITY year_codes SYSTEM "year_codes.xml">
+]>
+<sqlschema database="publications">
+   &author_codes;
+   &gender_codes;
+   &rsc_codes;
+   &year_codes;
+ <table  name="students"
+ 			order="supervisor,surname,firstname"
+ 			label="Student Info"
+ 			editorpagesize="20"
+ 			completionScript="common/jx_complete.js"
+ 			>
+  <field name="code" type="integer" hidden="true" qualifiers="not null auto_increment primary key" key="primary"></field>
+  <field name="surname" type="tinytext" width="20" maxlength="60" key="secondary">Surname</field>
+  <field name="firstname" type="tinytext" width="20" maxlength="60" key="secondary">Firstname</field>
+  <field name="title" type="tinytext" width="3" maxlength="5">Title</field>
+  <field name="gender" type="gender-type">Gender</field>
+  <field name="stnumber" type="tinytext" width="10" maxlength="30" key="secondary"
+  			onChange="value=value.toLowerCase();"
+  		>Student Number</field>
+  <field name="supervisor" type="tinytext" width="10" maxlength="30" key="secondary"
+  			expression="($schemaEditAction=='Insert item')?$edit_author_stnumber:NULL"
+  			hidden="!($admin_edit)" fixed="!($admin_edit)"
+  			onChange="value=value.toLowerCase();"
+ 			completionClass="jxComplete"
+ 			matchUrlPath="completion.php"
+  			matchCompare="stnumber,firstname,surname"
+  			matchComplete="supervisor=stnumber,sup_title=title,sup_firstname=firstname,sup_surname=surname"
+  			matchLabel="$row->title.' '.$row->firstname.' '.$row->surname"
+  			matchUrlMatchField="match_field"
+  			matchUrlFetchField="fetch_field"
+  			matchUrlValueField="match_text"
+  			matchQueryBase="'table=people&amp;fetch_field[]=firstname&amp;fetch_field[]=surname&amp;fetch_field[]=title&amp;where_extra='.urlencode('kind!=\'admin\'')"
+  		>Supervisor Staff Number<documentation>To initiate a match from the database, type a few letters
+  		from the staff number, surname, or first name of the staff member. The supervisor must have a
+  		login account to the RPC system.</documentation></field>
+  <field name="sup_title" type="tinytext" width="4" maxlength="200"
+   	expression="($schemaEditAction=='Insert item')?$edit_author_row->title:NULL"
+		hidden="!($admin_edit)" fixed="!($admin_edit)">Supervisor Title<documentation>(Optional. This doubles up information in the account database for simplified searching)</documentation></field>
+  <field name="sup_firstname" type="tinytext" width="30" maxlength="200"
+  		expression="($schemaEditAction=='Insert item')?$edit_author_row->firstname:NULL"
+  		hidden="!($admin_edit)" fixed="!($admin_edit)">Supervisor Firstname<documentation>(Optional)</documentation></field>
+  <field name="sup_surname" type="tinytext" width="30" maxlength="200"
+  		expression="($schemaEditAction=='Insert item')?$edit_author_row->surname:NULL"
+  		hidden="!($admin_edit)" fixed="!($admin_edit)">Supervisor Surname<documentation>(Optional)</documentation></field>
+  <field name="school_code" type="rsc-type">School Name</field>
+  <field name="commence_year" type="year-type" width="80" maxlength="200">Commencement Year</field>
+  <field name="completion_year" type="year-type" width="80" maxlength="200">Completion Year</field>
+  <field name="project" type="text" width="70" height="4">Description of students project (Optional)<documentation>This
+  	field is not used for any evaluation purposes.
+  	It is provided to give a user-friendly overview of the
+  	student's studies for other web pages within RMIT that reference this database.</documentation></field>
+  <field name="create_timestamp" type="datetime" hidden="true" fixed="true" expression="($edAction=='Insert item')?date('YmdHis'):NULL"></field>
+  <field name="edit_timestamp" type="datetime" hidden="true" fixed="true" expression="date('YmdHis')"></field>
+ </table>
+</sqlschema>

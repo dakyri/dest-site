@@ -1,0 +1,10 @@
+  <enum-type name="author-type">
+  	 <value name="student">Student</value>
+  	 <value name="staff">Staff</value>
+  	 <value name="external">External</value>
+  	 <value name="adjunct">Adjunct</value>
+  </enum-type>
+  <enum-type name="gender-type" fixed="true">
+  	 <value name="M">Male</value>
+  	 <value name="F">Female</value>
+  </enum-type>

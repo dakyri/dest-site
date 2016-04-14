@@ -1,0 +1,126 @@
+code:1
+name:Mask Aligner
+full_name:MJB3
+manufacturer:Karl Suss
+location_code:2
+location:Clean Room 2
+type:lithography
+paragraph:some%20words%20on%20the%20mjb&some%20more%20words%20on%20the%20mjb&
+image:aligner_l.jpg&&
+image_align:right&center&center
+image_caption:this%20is%20actually%20close%20to%20the%20right%20one&&
+document:maskaligner.pdf&&
+document_caption:MJB3%20Manual&&
+needs_booking:1
+is_active:1
+edit_timestamp:2006-08-27 02:42:19
+create_timestamp:2006-08-25 01:46:43
+
+code:2
+name:Mask Aligner
+full_name:Karl Suss 10wnV
+manufacturer:Karl Suss
+location_code:1
+location:Clean Room 1
+type:lithography
+paragraph:some%20words%20about%20the%20mask%20aligner&maybe%20some%20more%20words&
+image:Mask Aligner.jpg&&
+image_align:right&center&center
+image_caption:some%20one%20else%27s%20aligner&&
+document:MA6 Manual.pdf&&
+document_caption:MA6%20Manual&&
+needs_booking:1
+is_active:1
+edit_timestamp:2006-08-27 14:55:17
+create_timestamp:2006-08-25 01:47:06
+
+code:3
+name:Automated Spinner
+full_name:Suss RC9
+manufacturer:Karl Suss
+location_code:1
+location:Clean Room 1
+type:deposition
+paragraph:some%20words%20on%20the%20spinner&some%20other%20words%20on%20the%20spinner&
+image:spin-coater-bild3.jpg&&
+image_align:right&center&center
+image_caption:someone%20else%27s%20spinner&&
+document:&&
+document_caption:&&
+needs_booking:0
+is_active:1
+edit_timestamp:2006-08-27 01:34:02
+create_timestamp:2006-08-25 01:47:16
+
+code:4
+name:Sputterer
+full_name:LZ80y
+manufacturer:LZ Mob
+location_code:3
+location:Vaccuum Lab
+type:deposition
+paragraph:&&
+image:sputter.jpg&&
+image_align:right&center&center
+image_caption:someone%20else%27s%20sputter&&
+document:&&
+document_caption:&&
+needs_booking:0
+is_active:1
+edit_timestamp:2006-08-27 01:34:11
+create_timestamp:2006-08-25 01:48:43
+
+code:5
+name:Automated Hotplate
+full_name:Dataplate
+manufacturer:American Instruments
+location_code:2
+location:Clean Room 2
+type:fabrication
+paragraph:some%20stuff%20about%20the%20data%20plate&some%20more%20stuff%20about%20the%20dataplate&
+image:2938_HOT_PLATE.jpg&&
+image_align:right&center&center
+image_caption:data%20plate.%20right%20on&&
+document:&&
+document_caption:&&
+needs_booking:1
+is_active:1
+edit_timestamp:2006-08-27 01:34:51
+create_timestamp:2006-08-25 01:49:42
+
+code:8
+name:Inverted Microscope
+full_name:Pooky
+manufacturer:Cannon
+location_code:4
+location:Microfluidics Lab
+type:analytical
+paragraph:&&
+image:1200cmi_mscope.gif&&
+image_align:right&center&center
+image_caption:&&
+document:&&
+document_caption:&&
+needs_booking:0
+is_active:1
+edit_timestamp:2006-08-27 01:34:40
+create_timestamp:2006-08-25 01:53:19
+
+code:9
+name:Syringe pump
+full_name:
+manufacturer:
+location_code:4
+location:Microfluidics Lab
+type:analytical
+paragraph:an%20accurate%20low%20flow%20pump&&
+image:Aladdin-Syringe-Pump.jpg&&
+image_align:right&center&center
+image_caption:similar%2C%20anyway&&
+document:&&
+document_caption:&&
+needs_booking:0
+is_active:1
+edit_timestamp:2006-08-27 17:59:42
+create_timestamp:2006-08-25 01:53:54
+

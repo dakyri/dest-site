@@ -1,0 +1,108 @@
+<?xml version = '1.0'?>
+<!DOCTYPE pdfschema [
+	<!ENTITY rfcd_codes SYSTEM "rfcd_codes.xml">
+	<!ENTITY vrii_codes SYSTEM "vrii_codes.xml">
+	<!ENTITY author_codes SYSTEM "author_codes.xml">
+	<!ENTITY gender_codes SYSTEM "gender_codes.xml">
+	<!ENTITY month_codes SYSTEM "month_codes.xml">
+	<!ENTITY group_codes SYSTEM "group_codes.xml">
+	<!ENTITY rsc_codes SYSTEM "rsc_codes.xml">
+]>
+<pdfschema database="publications">
+   &gender_codes;
+   &month_codes;
+   &group_codes;
+   &author_codes;
+   &vrii_codes;
+   &rfcd_codes;
+   &rsc_codes;
+ <define-style name="heading1" font="Arial" style="B" size="16"/>
+ <define-style name="heading2" font="Arial" style="B" size="14"/>
+ <define-style name="heading3" font="Arial" style="B" size="12"/>
+ <define-style name="heading4" font="Arial" style="B" size="11"/>
+ <define-style name="heading5" font="Arial" style="B" size="10"/>
+ <define-style name="heading6" font="Arial" style="B" size="9"/>
+ <define-style name="heading7" font="Arial" style="BI" size="9"/>
+ <define-style name="body1" font="Arial" style="" size="9"/>
+ <box border="true" x="0" y="0">
+  <img src="rmit-logo.png" x="1" y="10"/>
+  <box border="false" x="50" y="0"/>
+   <text style="heading1">DEST Research Publications Collection</text>
+   <text style="heading2">Publication Year 2005</text>
+   <text style="heading2">C1 - Journal Article</text><text>Pwi Ref No.</text><text>2005<text/><field database="publication" table="journal" field="pwinumber"/>
+  </box>
+ </box>
+ <matrix>
+  <row>
+   <cell><text style="heading5">Article Title</text></cell>
+   <cell><field database="publication" table="journal" field="title"/></cell>
+   <cell><text style="heading5">Journal Name</text></cell>
+   <cell><field database="publication" table="journal" field="title"/></cell>
+  </row>
+  <row>
+   <cell><text style="heading5">Publisher</text></cell>
+   <cell><field database="publication" table="journal" field="title"/></cell>
+   <cell><text style="heading5">Place of Publication</text></cell>
+   <cell><field database="publication" table="journal" field="title"/></cell>
+  </row>
+  <row>
+   <cell><text style="heading5">ISSN</text></cell>
+   <cell><field database="publication" table="journal" field="title"/></cell>
+   <cell><text style="heading5">Keywords</text></cell>
+   <cell><field database="publication" table="journal" field="title"/></cell>
+  </row>
+  <row>
+   <cell><text style="heading5">Volume &amp;/or edition</text></cell>
+   <cell><field database="publication" table="journal" field="title"/></cell>
+   <cell><text style="heading5">Page No.'s</text></cell>
+   <cell><field database="publication" table="journal" field="title"/></cell>
+  </row>
+ </matrix>
+ <matrix>
+  <row>
+   <cell><text style="heading5" direction="up">Order</text></cell>
+   <cell><text style="heading5">Staff/Student ID</text></cell>
+   <cell><text style="heading5">Surname</text></cell>
+   <cell><text style="heading5">First Name</text></cell>
+   <cell><text style="heading5">Title</text></cell>
+   <cell><text style="heading5" direction="up">Gender</text></cell>
+   <cell><text style="heading5">Type</text></cell>
+   <cell><text style="heading5">School name or External Org Name</text></cell>
+   <cell><text style="heading5">School Code</text></cell>
+  </row>
+  <list nitem="6" direction="vertical" iterator="$i">
+   <row>
+    <cell><expression value="$i"/></cell>
+    <cell><field database="publication" table="journal" field="stnumber"/></cell>
+    <cell><field database="publication" table="journal" field="surname"/></cell>
+    <cell><field database="publication" table="journal" field="firstname"/></cell>
+    <cell><field database="publication" table="journal" field="author_title"/></cell>
+    <cell><field database="publication" table="journal" field="gender"/></cell>
+    <cell><field database="publication" table="journal" field="type"/></cell>
+    <cell><field database="publication" table="journal" field="school_org_name"/></cell>
+    <cell><field database="publication" table="journal" field="school_code"/></cell>
+   </row>
+  </list>
+ </matrix>
+ <matrix>
+  <list nitem="4" direction="horizontal">
+ <row>
+   <cell><field field="rfcd_code"/></cell>
+   <cell><field field="rfcd_split"/><text>%</text></cell>
+ </row>
+ </list>
+ </matrix>
+ <box>
+  <text>I, as the first named RMIT author of this journal article, confirm the following,
+   <ol>
+    <li>This publication meets the DEST definition of research.</li>
+    <li>This publication was published in 2005.</li>
+    <li>This publication is a scholarly journal and has an ISSN (International Standard Serial Number)</li>
+    <li>This publication is peer-reviewed.</li>
+    <li>The research for this publication was undertaken in my capacity as a staff member or student of RMIT University.</li>
+    <li>This is the first time this publication has been submitted for inclusion in the DEST Research Publications Collection and that it is mainly unpublished material, making a substantial contribution to knowledge.</li>
+   </ol>
+  </text>
+ </box>
+</pdfschema>
+

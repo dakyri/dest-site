@@ -1,0 +1,6 @@
+  <enum-type name="author-type">
+  	 <value name="staff">Staff</value>
+  	 <value name="external">External</value>
+  	 <value name="student">Student</value>
+  	 <value name="adjunct">Adjunct</value>
+  </enum-type>

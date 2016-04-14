@@ -1,0 +1,57 @@
+<?xml version = '1.0'?>
+<!DOCTYPE sqlschema [
+]>
+<sqlschema database="dest1">
+ <table  name="facilities"
+ 			order="create_timestamp"
+ 			validation-displayed="false"
+ 			validation-enforced="false"
+ 			label="Facilities">
+  <documentation><b>Add, Remove or Edit an entry in the MMTC facilities list.<br/></b>
+  	   	 <font size="-2">The frontend of the site provides all of the necessary formatting and wierd bits required for a listing.
+  	 For special effects and emphasis, the strong of heart will find most HTML
+    formatting tags and entities are permitted and are sensible in most text fields below (especially in the paragraph text),
+    in particular:
+    <table cellspacing="0" cellpadding="0"><tr><td><font size="-2"><ul>
+    <li>&amp;lt;P&amp;gt; for a paragraph</li>
+    <li>&amp;lt;BR&amp;gt; to start a new line</li>
+    <li>&amp;lt;A&amp;gt;..&amp;lt;/A&amp;gt; for a hyperlink</li>
+    </ul></font></td><td><font size="-2"><ul>
+    <li>&amp;lt;B&amp;gt;..&amp;lt;/B&amp;gt; for bold text</li>
+    <li>&amp;lt;I&amp;gt;..&amp;lt;/I&amp;gt; for italic text</li>
+    <li>&amp;lt;FONT&amp;gt;..&amp;lt;/FONT&amp;gt; for a change of font size, face, or color</li>
+    </ul></font></td><td><font size="-2"><ul>
+    <li>&amp;amp;lt; is a single &amp;lt;</li>
+    <li>&amp;amp;gt; is a single &amp;gt;</li>
+    <li>&amp;amp;amp; is a single &amp;amp;</li>
+    </ul></font></td></tr></table></font>
+  </documentation>
+  <enum-type name="image-align-type">
+  	 <value name="center">Center</value>
+  	 <value name="left">Left</value>
+  	 <value name="right">Right</value>
+  	 <value name="bottom">Bottom</value>
+  	 <value name="middle">Middle</value>
+  	 <value name="top">Top</value>
+  </enum-type>
+  <list-type name="description-list" size="3">
+  	<field name="paragraph" type="text" width="45" height="4">Text</field>
+  	<field name="image" type="image" width="30" maxlength="255"
+  		base="'fac'.($schema_edit_scripting?$row->code:($schema_edit_updating?$code:($schema_edit_inserting?$schema_edit_auto_increment:0)))"
+  		fixed="false">Image</field>
+  	<field name="image_align" type="image-align-type">Alignment</field>
+  	<field name="image_caption" type="tinytext" width="20" maxlength="255">Image Caption</field>
+  </list-type>
+  <field name="code" type="integer" hidden="true" qualifiers="not null auto_increment primary key" key="primary" ></field>
+  <field name="name" type="tinytext" width="80" maxlength="200" key="secondary">Name</field>
+  <field name="location" type="tinytext" width="80" maxlength="200">RMIT Location</field>
+  <field name="supervisor" type="tinytext" width="80" maxlength="200" hidden="true">Facility supervisor</field>
+  <field name="phone" type="tinytext" width="20" maxlength="20">Phone</field>
+  <field name="description" type="description-list">Description<documentation>Text blocks are arranged in
+  		paragraphs on a descriptive page for the facility, and associated images are placed after (or to the
+  		side of) the paragraph. Either text or image may be left empty. Space for more paragraphs 
+  		or images will be added automatically if you need more.</documentation></field>
+  <field name="edit_timestamp" type="datetime" hidden="true" fixed="true" expression="date('YmdHis')"></field>
+  <field name="create_timestamp" type="datetime" hidden="true" fixed="true" expression="($schemaEditAction=='Insert item')?date('YmdHis'):NULL"></field>
+ </table>
+</sqlschema>

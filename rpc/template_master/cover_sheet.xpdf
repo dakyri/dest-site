@@ -1,0 +1,141 @@
+<?xml version = '1.0'?>
+<!DOCTYPE pdfschema [
+]>
+<pdfschema database="publications">
+ <define-style name="heading1" font="Arial" style="B" size="16"/>
+ <define-style name="heading2" font="Arial" style="B" size="14"/>
+ <define-style name="heading3" font="Arial" style="B" size="12"/>
+ <define-style name="heading4" font="Arial" style="B" size="11"/>
+ <define-style name="heading5" font="Arial" style="B" size="10"/>
+ <define-style name="heading6" font="Arial" style="B" size="9"/>
+ <define-style name="heading7" font="Arial" style="BI" size="9"/>
+ <define-style name="body1" font="Arial" style="" size="9"/>
+ <define-style name="field1" font="Times" style="" size="9"/>
+ <database-object name="pubrow" database="dest" table="journal" where="code='$code'"/>
+ <matrix border="frame" x="0" y="0">
+  <col name="image" border="false" x="1"/>
+  <col name="text" border="false" x="70"/>
+  <img src="images/pdfdoc/rmit-logo.png" x="1" y="5" width="60"/>
+  <cell x="text" style="heading1">DEST Research Publications Collection</cell>
+  <cell x="text" style="heading2">Publication Year 2005</cell>
+  <row>
+  	<cell x="text" style="heading2">C1 - Journal Article</cell>
+  	<cell x="130">Pwi Ref No.</cell>
+  	<cell>2005</cell>
+  	<cell><field object="pubrow" field="pwi_code"/></cell>
+  </row>
+ </matrix>
+ <matrix border="children">
+  <title>
+  	<cell style="heading4">Journal Article Details</cell>
+  </title>
+  <row>
+   <cell style="heading5" width="15">Article Title</cell>
+   <cell style="field1"><field object="pubrow" field="title"/></cell>
+  </row>
+  <row>
+   <cell style="heading5" width="15">Journal Name</cell>
+   <cell style="field1"><field object="pubrow" field="journal_name"/></cell>
+  </row>
+  <row>
+   <cell style="heading5" width="15">Publisher</cell>
+   <cell style="field1" width="45"><field object="pubrow" field="publisher"/></cell>
+   <cell style="heading5" width="25">Place of Publication</cell>
+   <cell style="field1"><field object="pubrow" field="publication_place"/></cell>
+  </row>
+  <row>
+   <cell style="heading5" width="15">ISSN</cell>
+   <cell style="field1" width="45"><field object="pubrow" field="issn"/></cell>
+   <cell style="heading5" width="25">Keywords</cell>
+   <cell style="field1"><field object="pubrow" field="keywords"/></cell>
+  </row>
+  <row>
+   <cell style="heading5" width="25">Volume &amp;/or edition</cell>
+   <cell style="field1" width="35"><field object="pubrow" field="volume"/>[<field object="pubrow" field="edition"/>]</cell>
+   <cell style="heading5" width="25">Page No.'s</cell>
+   <cell style="field1"><field object="pubrow" field="start_page"/>-<field object="pubrow" field="end_page"/></cell>
+  </row>
+ </matrix>
+ <matrix border="children">
+  <title>
+  	<cell style="heading4">Author Details - please list in same order as on publication</cell>
+  </title>
+  <col name="order" x="0"/>
+  <col name="stnumber" x="5"/>
+  <col name="surname" x="20"/>
+  <col name="firstname" x="50"/>
+  <col name="title" x="80"/>
+  <col name="gender" x="90"/>
+  <col name="type" x="95"/>
+  <col name="schoolname" x="110"/>
+  <col name="schoolcode" x="170"/>
+  <row>
+   <cell x="order" style="heading5" direction="V">Order</cell>
+   <cell x="stnumber" style="heading5">Staff/Student ID</cell>
+   <cell x="surname" style="heading5">Surname</cell>
+   <cell x="firstname" style="heading5">First Name</cell>
+   <cell x="title" style="heading5">Title</cell>
+   <cell x="gender" style="heading5" direction="V">Gender</cell>
+   <cell x="type" style="heading5">Type</cell>
+   <cell x="schoolname" style="heading5">School name or External Org Name</cell>
+   <cell x="schoolcode" style="heading5">School Code</cell>
+  </row>
+  <list nitem="6" direction="vertical" iterator="auth_row">
+   <row>
+    <cell x="order" style="field1"><expression expr="$auth_row+1"/></cell>
+    <cell x="stnumber" style="field1"><field object="pubrow" field="stnumber" index="$auth_row"/></cell>
+    <cell x="surname" style="field1"><field object="pubrow" field="surname" index="$auth_row"/></cell>
+    <cell x="firstname" style="field1"><field object="pubrow" field="firstname" index="$auth_row"/></cell>
+    <cell x="title" style="field1"><field object="pubrow" field="author_title" index="$auth_row"/></cell>
+    <cell x="gender" style="field1"><field object="pubrow" field="gender" index="$auth_row"/></cell>
+    <cell x="type" style="field1"><field object="pubrow" field="type" index="$auth_row"/></cell>
+    <cell x="schoolname" style="field1"><field object="pubrow" field="school_org_name" index="$auth_row"/><field object="pubrow" field="school_code" index="$auth_row" condition="empty-cell" expr="$GLOBALS['rsc_type']->Label(@)"/></cell>
+    <cell x="schoolcode" style="field1"><field object="pubrow" field="school_code" index="$auth_row" expr="@!='-1'?@:''"/></cell>
+   </row>
+  </list>
+ </matrix>
+ <matrix border="children">
+  <title>
+  	<cell style="heading4">RFCD Codes</cell>
+  	<cell style="body1">(please see http://wwww.rmit.edu.au/browse/;ID=sisbuiltujw) if more than one RFCD please ensure % totals to 100.</cell>
+  </title>
+   <row>
+    <cell style="heading5" width="20" height="4">Subject</cell>
+  	 <list nitem="4" direction="horizontal" iterator="sub_ind">
+     <cell style="field1" width="15" height="4"><field object="pubrow" field="rfcd_code" index="$sub_ind"/></cell>
+    </list>
+   </row>
+   <row>
+    <cell style="heading5" width="20" height="4">Split</cell>
+  	 <list nitem="4" direction="horizontal" iterator="sub_ind">
+     <cell style="field1" width="15" height="4"><field object="pubrow" field="rfcd_split" index="$sub_ind" expr="@!=''?@.'%':''"/></cell>
+    </list>
+   </row>
+ </matrix>
+ <matrix border="children">
+  <title>
+  	<cell style="heading4">Virtual Research Innovation Institution (VRII) - choose one</cell>
+  </title>
+  <row>
+  	<list nitem="count($GLOBALS['vrii_type']->value)" iterator="vri_ind">
+  	 <cell style="heading7"><checkbox width="4" object="pubrow" field="vrii" expr="@==$GLOBALS['vrii_type']->value[$vri_ind]->name"/><expression expr="$GLOBALS['vrii_type']->value[$vri_ind]->label"/></cell>
+  	</list></row>
+ </matrix>
+ <matrix border="frame">
+  <cell style="heading3">Author Verification</cell>
+  <cell style="body1">I, as the first named RMIT author of this journal article, confirm the following,\n
+ 1. This publication meets the DEST definition of research.\n
+ 2. This publication was published in 2005.\n
+ 3. This publication is a scholarly journal and has an ISSN (International Standard Serial Number)\n
+ 4. This publication is peer-reviewed.\n
+ 5. The research for this publication was undertaken in my capacity as a staff member or student of RMIT University.\n
+ 6. This is the first time this publication has been submitted for inclusion in the DEST Research Publications Collection and that it is mainly unpublished material, making a substantial contribution to knowledge.\n
+  </cell>
+  <row>
+  	<cell style="heading3">Signature</cell>
+  	<cell style="heading4">............................................................     Date...................</cell>
+  </row>
+ </matrix>
+</pdfschema>
+
+

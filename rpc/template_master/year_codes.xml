@@ -1,0 +1,35 @@
+  <enum-type name="year-type" fixed="true">
+  	 <value name="none"></value>
+  	 <value name="2006">2006</value>
+  	 <value name="2007">2007</value>
+  	 <value name="2008">2008</value>
+  	 <value name="2009">2009</value>
+  	 <value name="2010">2010</value>
+  	 <value name="2011">2011</value>
+  	 <value name="2012">2012</value>
+  	 <value name="2013">2013</value>
+  	 <value name="2014">2014</value>
+  	 <value name="2015">2015</value>
+  	 <value name="2016">2016</value>
+  	 <value name="2017">2017</value>
+  	 <value name="2018">2018</value>
+  	 <value name="2019">2019</value>
+  	 <value name="2020">2020</value>
+  	 <value name="2021">2021</value>
+  	 <value name="2022">2022</value>
+  	 <value name="2023">2023</value>
+  	 <value name="2024">2024</value>
+  	 <value name="2025">2025</value>
+  	 <value name="2026">2026</value>
+  	 <value name="2027">2027</value>
+  	 <value name="2028">2028</value>
+  	 <value name="2029">2029</value>
+  	 <value name="1998">1998</value>
+  	 <value name="1999">1999</value>
+  	 <value name="2000">2000</value>
+  	 <value name="2001">2001</value>
+  	 <value name="2002">2002</value>
+  	 <value name="2003">2003</value>
+  	 <value name="2004">2004</value>
+  	 <value name="2005">2005</value>
+  </enum-type>

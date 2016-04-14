@@ -1,0 +1,361 @@
+BODY {  
+	background-repeat: repeat-y;   
+	background-attachment: fixed;   
+	background-position: left top;  
+	background-color:#ffffff ;  
+	color:#183484;   
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;   
+	font-size: 11pt;   
+	font-style: normal;   
+	line-height: normal;  
+	font-weight: normal;   
+	text-decoration: none; 
+}
+
+BODY.page-main {   
+	background-repeat: repeat-y;   
+	background-attachment: fixed;   
+	background-position: left top;  
+	background-color:#ffffff ;  
+	color:#183484;   
+	margin: 0cm 0cm 0cm 0cm;
+	padding: 0cm;
+/*  background-image: url(thinfluorostrip.jpg);*/ 
+}
+
+IMG.page-top {
+/*	position:absolute;
+	top:0px;
+	left:0px;*/
+	border-width:0px;
+	background-color:transparent;
+	padding:0px;
+	margin: 0px;
+	display: block;
+}
+
+P {
+	margin: 0.4cm 0.4cm 0.4cm 0.4cm ;
+	padding: 0px;
+}
+
+A {
+	background-color:#ffffff ;  
+	color:#000000;   
+	font-weight: normal;
+/*	text-decoration:none;*/
+}
+
+A:hover {
+	background-color:#ffffff ;  
+	color:#000000;   
+}
+
+A:active {
+	background-color:#ffffff ;  
+	color:#000000;   
+}
+
+A:visited {
+	background-color:#ffffff ;  
+	color:#000000;   
+}
+A:link {
+	background-color:#ffffff ;  
+	color:#000000;   
+}
+
+A.item-action {
+   color:#55aa55;   
+	font-weight: bold;
+}
+
+A.item-title-action {
+   color:#55aa55;   
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+A.item-title-action IMG {
+	border-color: #55aa55; 
+	border-style: solid;
+	border-width: 1px;
+}
+
+IMG {
+	background-color:#ffffff ;  
+	color:#000000;   
+	font-size: 24pt;
+	font-weight: 900;
+	border: 0;
+	padding: 2px;
+	margin: 3px;   
+}
+
+OBJECT, EMBED {
+	background-color:#ffffff ;  
+	color:#183484;   
+}
+
+DIV.nav {
+	float: left;
+	padding: 0.3cm 0.4cm 0.4cm 0.3cm;
+	margin: 0cm 0.4cm 0.4cm 0cm;
+	color:#000000;
+	height:250px;
+	width: 90px;
+	background-color:#ffffff ;  
+	background-repeat:no-repeat;
+	background-image: url(mmtc_nav_bg_2.jpg);
+}
+
+DIV.nav A,DIV.nav A:visited {
+	width:100%;
+	background-color:#aaaaaa ;  
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 8pt;   
+	padding: 1px;
+	margin: 0px;
+	font-style: normal;
+	display:block;
+	text-decoration:none;
+}
+
+DIV.nav A:hover {
+	background-color:#777777 ;  
+}
+
+
+DIV.nav A.current:hover, DIV.nav A.current, DIV.nav A.current:visited {
+	background-color:#88bbaa ;  
+}
+
+A.img-button {
+   background-color:#ffffff ;  
+   color:#000000;   
+   border-color:  #444444;  
+   border: medium outset;   
+/*	background-image: url(../images/button/sexias-logo-bev-but.gif);*/
+   background-repeat: no-repeat;   
+   background-position: bottom center;   
+   border: medium outset;   
+   display: block;   
+   width: 55px;
+   height: 60px;
+   padding: 2px;   
+   margin: 0px;   
+   position: relative;   
+   line-height: 1.2em;   
+   font-size:10pt;  
+   top: 0px;   
+   bottom: 0px;   
+   text-align: center;   
+   text-decoration: none;   
+/*   text-shadow: black 0px 0px 5px;*/   
+}
+  
+A.img-button:hover  {
+   background-color:#ffffff ;  
+   color:#000000;   
+   border-color:  #444444;  
+   border-width: medium;
+   border-style: inset;   
+}
+  
+A.img-button:active  {
+   border-width: medium;
+   border-style: inset;   
+   background-color:#ffffff ;  
+   color:#000000;   
+   border-color:  #444444;  
+}
+
+A.img-button:visited {
+   background-color:#ffffff ;  
+   color:#000000;   
+   border-color:  #444444;  
+}
+   
+A.img-button:link {
+   background-color:#ffffff ;  
+   color:#000000;   
+   border-color:  #444444;  
+}  
+
+SPAN.rmit {
+	font-size: 16pt;
+	font-style: italic;
+	font-weight: 700;   
+	background-color:#ffffff ;  
+	color:#183484;   
+}
+
+TH {  
+  display: table-cell;  
+  font-size: 9pt;  
+}  
+TD {  
+  display: table-cell;
+  font-size: 9pt;  
+}
+
+TH.schema-sel {  
+  display: table-cell;  
+  font-size: 9pt;
+  background-color: #B1F3B1;
+}  
+TD.schema-sel {  
+  display: table-cell;
+  font-size: 9pt;  
+  background-color:  #B1F3B1;
+}  
+  
+TH.schema-del {  
+  display: table-cell;  
+  font-size: 9pt;  
+  background-color: #FFA629;
+}  
+TD.schema-del {  
+  display: table-cell;
+  font-size: 9pt;  
+  background-color: #FFA629;
+}  
+
+TABLE.paginator {
+	font-weight: 400;
+	text-align: left;   
+	font-size: 14pt;
+	background-color: #FFFFFF;
+}
+TABLE.paginator TD {
+	font-weight: 400;
+   text-align: left;   
+	font-size: 14pt;
+	background-color: #FFFFFF;
+}
+TABLE.paginator TD.paginator-pgsel A {
+	font-weight: 400;
+   text-align: left;   
+	font-size: 14pt;
+	background-color: #12F22B;
+}
+TABLE.paginator TD A {
+	font-weight: 400;
+   text-align: left;   
+	font-size: 14pt;
+	background-color: #76D0FF;
+}
+
+DIV.jxc-viewer {
+	background-color: #FF876F;
+	border-color: #000000;
+	border-width: thin;
+	border-style: solid;
+	position: absolute;
+	display:table;
+}
+
+DIV.jxc-viewer-row {
+	background-color: #FF876F;
+	display:table-row;
+}
+
+DIV.jxc-viewer-select {
+	background-color: #10A900;
+	display:table-row;
+}
+
+DIV.jxc-viewer-hover {
+	background-color: #EE4802;
+	display:table-row;
+}
+
+SPAN.jxc-viewer-value {
+	color:blue;
+	float:left;
+	font-weight: 400;
+   text-align: left;   
+	font-size: 10pt;
+	display:table-cell;
+}
+
+SPAN.jxc-viewer-label {
+	color:black;
+	float:right;
+	font-weight: 400;
+   text-align: right;   
+	font-size: 10pt;
+	display:table-cell;
+}
+
+DIV.edit-controls {
+/*	margin-left: 10%;*/
+/*	margin-right: 10%;*/
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 5px 5px 5px 5px;
+	border-color: #222222 #888888 #888888 #222222;
+	background-color: #dddddd;
+	display:block;
+/*	width:0px;*/
+/*	color: #444444; */
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+}
+
+DIV.edit-controls INPUT {
+	background-color:#4B54FF;
+	border-color: #888888 #222222 #222222 #888888;
+/*	color: #111111;*/
+	font-weight: 600;
+	border-style: outset;
+	border-width: thin;
+	width: 100%;
+}
+
+DIV.edit-controls INPUT:hover {
+	background-color:#34399D;
+	border-color: #888888 #222222 #222222 #888888;
+	color: #111111;
+	font-weight: 600;
+	border-style: outset;
+	border-width: thin;
+	width: 100%;
+}
+
+DIV.edit-controls TD {
+	margin: 0px;
+	padding: 0px;
+}
+
+DIV.short-form {
+	margin: 10px;
+	padding: 10px;
+	display: block;
+}
+
+DIV.short-form P {
+	margin: 10px;
+	padding: 0px;
+}
+
+DIV.pub-abstract-head {
+	font-weight: 400;
+	font-size: 13pt;
+	margin: 10px;
+	float: none;
+	display: block;
+}
+DIV.pub-abstract-body {
+	font-weight: 200;
+	font-size: 10pt;
+	margin: 20px 20px 20px 130px;
+	padding: 10px 10px 10px 10px;
+	float: none;
+	display: block;
+}

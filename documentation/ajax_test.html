@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Teast frame wok</title>
+</head>
+<link href="style/default.css" rel="stylesheet">
+<body>
+<script language="javascript" src="../common/jx_complete.js"></script>
+<h1>Ajax test</h1>
+<form action="ajax_test.html" method="post" name="testform">
+<input type="text" name="testtext" size="10" maxlength="96">
+<input type="text" name="testtext2" size="30" maxlength="96">
+<input type="text" name="testtext3" size="30" maxlength="96">
+<script language="javascript">
+// match-table="journal_info" match-field="journal_name" match-complete="publisher,publication_place"	var test_completer = new jxComplete(
+
+// $match_table = "journal_info"
+// $match_field = "journal_name"
+// $match_complete="journal_name,publisher,publication_place"
+
+// $match_table = "people"
+// $match_field = "stnumber,surname,firstname"
+// $match_label = '$row->title $row->firstname $row->surname';
+// $match_complete="stnumber,surname,firstname,title,gender"
+
+//	$fa = explode(',',$match_field);
+//	$ca = explode(',',$match_complete);
+//	echo	"completion.php?table=$match_table"; 
+//	reset($fa);
+//	while (list($k,$v) = each($fa)) {
+//		echo "&match_field[]=$v";
+//	}
+//	reset($ca);
+//	while (list($k,$v) = each($ca)) {
+//		echo "&fetch_field[]=$v";
+//	}
+
+
+	test_completer = new jxComplete(
+		'completion.php?table=people'+
+			'&fetch_field[]=stnumber&fetch_field[]=surname&fetch_field[]=firstname'+
+			'&match_field[]=stnumber&match_field[]=surname&match_field[]=firstname'+
+			'&where_extra='+escapeURI("kind!='admin'"),
+		'match_text',
+		testform.testtext,
+		'stnumber',
+		[testform.testtext2,testform.testtext3],
+		['surname','firstname'],
+		null);
+</script>
+</form>
+</body>
+</html>

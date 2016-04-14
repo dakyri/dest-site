@@ -1,0 +1,5 @@
+  <set-type name="research-group-type" fixed="true">
+  	 <value name="acrbr">ACRBR</value>
+  	 <value name="mmtc">MMTC</value>
+  	 <value name="dsp">DSP</value>
+  </set-type>

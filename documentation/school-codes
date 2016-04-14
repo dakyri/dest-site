@@ -1,0 +1,50 @@
+<enum name="school-type">
+ <category name="Business" label="Business">
+  <value name="40016100">Accounting & Law</value>
+  <value name="40006600">Business – Academic Development</value>
+  <value name="40006400">Business – Research & Innovation</value>
+  <value name="40016500">Business Information Technology</value>
+  <value name="41000060">Business Portfolio Office</value>
+  <value name="40020800">Centre for Management Quality Research</value>
+  <value name="40016400">Economics & Finance</value>
+  <value name="40006000">Graduate School of Business</value>
+  <value name="40016200">Management</value>
+  <value name="40016700">Marketing</value>
+  <value name="40086100">TAFE Business</value>
+  <value name="40016800">Transport Research Centre</value>
+ </category>
+ <category name="DSC" label="Design & Social Context">
+  <value name="40015500">Applied Communication</value>
+  <value name="40013100">Architecture & Design</value>
+  <value name="40015100">Art</value>
+  <value name="40003900">Australian Housing & Urban Research Centre</value>
+  <value name="50018409">Centre for Applied Social Research</value>
+  <value name="40003800">Centre for Design</value>
+  <value name="40015300">Creative Media</value>
+  <value name="40083100">Design & (TAFE)</value>
+  <value name="40005000">DSC – Academic Development</value>
+  <value name="40003000">DSC – Research & Innovation</value>
+  <value name="41000030">DSC Portfolio Office</value>
+  <value name="40009500">Education</value>
+  <value name="40015400">Fashion & Textiles</value>
+  <value name="40085400">ICGT – International Centre for Graphic Technology</value>
+  <value name="40009800">International & Community Studies</value>
+  <value name="40013200">Property, Construction & Project Management</value>
+  <value name="40013600">Social Science & Planning</value>
+ </category>
+ <category name="SET" label="Science, Engineering & Technology">
+  <value name="40011600">Aerospace, Mechanical & Manufacturing Engineering</value>
+  <value name="40012000">Applied Sciences</value>
+  <value name="40011000">Civil & Chemical Engineering</value>
+  <value name="40012800">Computer Science & Information Technology</value>
+  <value name="40011200">Electrical & Computer Engineering</value>
+  <value name="40002100">Health Sciences</value>
+  <value name="40081100">Infrastructure, Electroch & Building Services</value>
+  <value name="40082100">Life & Physical Sciences</value>
+  <value name="40012300">Mathematical & Geospatial Sciences</value>
+  <value name="40008100">Medical Sciences</value>
+  <value name="40002000">SET – Academic Development</value>
+  <value name="40001000">SET – Research & Innovation</value>
+  <value name="41000010">SET Portfolio Office</value>
+ </category>
+</enum>

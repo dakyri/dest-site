@@ -1,0 +1,1224 @@
+ <enum-type name="rfcd-type" fixed="true">
+  <value name="-1"></value>
+  <documentation>Research Fields, Courses and Disciplines (RFCD) Codes</documentation>
+  <category name="230000" label="MATHEMATICAL SCIENCES">
+   <category name="230100" label="MATHEMATICS">
+	  <value name="230101">Mathematical Logic, Set Theory, Lattices and Combinatorics</value>
+	  <value name="230102">Number Theory and Field Theory</value>
+	  <value name="230103">Rings and Algebras</value>
+	  <value name="230104">Category Theory, K Theory, Homological Algebra</value>
+	  <value name="230105">Group Theory and Generalisations (incl. Topological Groups and Lie Groups)</value>
+	  <value name="230106">Real and Complex Functions</value>
+	  <value name="230107">Differential, Difference and Integral Equations</value>
+	  <value name="230108">Harmonic and Fourier Analysis</value>
+	  <value name="230109">Functional Analysis</value>
+	  <value name="230110">Calculus of Variations and Control Theory</value>
+	  <value name="230111">Geometry</value>
+	  <value name="230112">Topology and Manifolds</value>
+	  <value name="230113">Dynamical Systems</value>
+	  <value name="230114">Functions of Several Complex Variables</value>
+	  <value name="230115">Approximation Theory</value>
+	  <value name="230116">Numerical Analysis</value>
+	  <value name="230117">Operations Research</value>
+	  <value name="230118">Optimisation</value>
+	  <value name="230119">Systems Theory and Control</value>
+	  <value name="230199">Mathematics not elsewhere classified</value>
+	</category>
+	<category name="230200" label="STATISTICS">
+	  <value name="230201">Probability Theory</value>
+	  <value name="230202">Stochastic Analysis and Modelling</value>
+	  <value name="230203">Statistical Theory</value>
+	  <value name="230204">Applied Statistics</value>
+	  <value name="230299">Statistics not elsewhere classified</value>
+	</category>
+	<category name="239900" label="OTHER MATHEMATICAL SCIENCES">
+	  <value name="239901">Biological Mathematics</value>
+	  <value name="239902">Actuarial Mathematics</value>
+	  <value name="239903">Risk theory</value>
+	  <value name="239904">Theory of Graduation</value>
+	  <value name="239999">Mathematical Sciences not elsewhere classified</value>
+	</category>
+  </category>
+  <category name="240000" label="PHYSICAL SCIENCES">
+	<category name="240100" label="ASTRONOMICAL SCIENCES">
+	  <value name="240101">Astronomy and Astrophysics</value>
+	  <value name="240102">Cosmic Ray Physics</value>
+	  <value name="240199">Astronomical Sciences not elsewhere classified</value>
+	</category>
+	<category name="240200" label="THEORETICAL AND CONDENSED MATTER PHYSICS">
+	  <value name="240201">Theoretical Physics</value>
+	  <value name="240202">Condensed Matter Physics - Structural Properties</value>
+	  <value name="240203">Condensed Matter Physics - Electronic and Magnetic Properties; Superconductivity</value>
+	  <value name="240204">Condensed Matter Physics - Other</value>
+	</category>
+	<category name="240300" label="ATOMIC AND MOLECULAR PHYSICS; NUCLEAR AND PARTICLE PHYSICS; PLASMA PHYSICS">
+	  <value name="240301">Atomic and Molecular Physics</value>
+	  <value name="240302">Nuclear and Particle Physics</value>
+	  <value name="240303">Plasmas and Electrical Discharges</value>
+	  <value name="240304">Other Plasma Physics</value>
+	</category>
+	<category name="240400" label="OPTICAL PHYSICS">
+	  <value name="240401">Optics and Opto-electronic Physics</value>
+	  <value name="240402">Quantum Optics and Lasers</value>
+	  <value name="240499">Optical Physics not elsewhere classified</value>
+	</category>
+	<category name="240500" label="CLASSICAL PHYSICS">
+	  <value name="240501">Acoustics and Acoustical Devices; Waves</value>
+	  <value name="240502">Fluid Physics</value>
+	  <value name="240503">Thermodynamics and Statistical Physics</value>
+	  <value name="240504">Electrostatics and Electrodynamics</value>
+	  <value name="240599">Classical Physics not elsewhere classified</value>
+	</category>
+	<category name="249900" label="OTHER PHYSICAL SCIENCES">
+	  <value name="249901">Biophysics</value>
+	  <value name="249902">Medical Physics</value>
+	  <value name="249903">Instruments and Techniques</value>
+	  <value name="249999">Physical Sciences not elsewhere classified</value>
+  	</category>
+  </category>
+  <category name="250000" label="CHEMICAL SCIENCES">
+	<category name="250100" label="PHYSICAL CHEMISTRY (INCL. STRUCTURAL)">
+	  <value name="250101">Chemical Thermodynamics and Energetics</value>
+	  <value name="250102">Chemistry of Catalysis</value>
+	  <value name="250103">Colloid and Surface Chemistry</value>
+	  <value name="250104">Chemical Spectroscopy</value>
+	  <value name="250105">Structural Chemistry</value>
+	  <value name="250106">Mechanisms of Reactions</value>
+	  <value name="250107">Electrochemistry</value>
+	  <value name="250199">Physical Chemistry not elsewhere classified</value>
+	</category>
+	<category name="250200" label="INORGANIC CHEMISTRY">
+	  <value name="250201">Transition Metal Chemistry</value>
+	  <value name="250202">Main Group Metal Chemistry</value>
+	  <value name="250203">Solid State Chemistry</value>
+	  <value name="250204">Bioinorganic Chemistry</value>
+	  <value name="250205">Non-Metal Chemistry</value>
+	  <value name="250206">f-Block Chemistry</value>
+	  <value name="250299">Inorganic Chemistry not elsewhere classified</value>
+	</category>
+	<category name="250300" label="ORGANIC CHEMISTRY">
+	  <value name="250301">Organic Chemical Synthesis</value>
+	  <value name="250302">Biological and Medical Chemistry</value>
+	  <value name="250303">Physical Organic Chemistry</value>
+	  <value name="250399">Organic Chemistry not elsewhere classified</value>
+	</category>
+	<category name="250400" label="ANALYTICAL CHEMISTRY">
+	  <value name="250401">Separation Science</value>
+	  <value name="250402">Analytical Spectrometry</value>
+	  <value name="250403">Electroanalytical Chemistry</value>
+	  <value name="250404">Flow Analysis</value>
+	  <value name="250405">Sensor (Chemical and Bio-) Technology</value>
+	  <value name="250406">Immunological and Bioassay Methods</value>
+	  <value name="250407">Other Instrumental Methods</value>
+	  <value name="250408">Chemometrics</value>
+	  <value name="250409">Quality Assurance, Traceability and Metrological Chemistry</value>
+	  <value name="250499">Analytical Chemistry not elsewhere classified</value>
+	</category>
+	<category name="250500" label="MACROMOLECULAR CHEMISTRY">
+	  <value name="250501">Synthesis of Macromolecules</value>
+	  <value name="250502">Physical Chemistry of Macromolecules</value>
+	  <value name="250503">Characterisation of Macromolecules</value>
+	  <value name="250504">Polymerisation Mechanisms</value>
+	  <value name="250599">Macromolecular Chemistry not elsewhere classified</value>
+	</category>
+	<category name="250600" label="THEORETICAL AND COMPUTATIONAL CHEMISTRY">
+	  <value name="250601">Quantum Chemistry</value>
+	  <value name="250602">Statistical Mechanics</value>
+	  <value name="250603">Reaction Kinetics and Dynamics</value>
+	  <value name="250604">Radiation and Matter</value>
+	  <value name="250605">Theory of Materials</value>
+	  <value name="250606">Macromolecular Design</value>
+	  <value name="250699">Theoretical and Computational Chemistry not elsewhere classified</value>
+	</category>
+	<category name="259900" label="OTHER CHEMICAL SCIENCES">
+	  <value name="259901">Organometallic Chemistry</value>
+	  <value name="259902">Environmental Chemistry (incl. Atmospheric Chemistry)</value>
+	  <value name="259903">Industrial Chemistry</value>
+	  <value name="259904">Supramolecular Chemistry</value>
+	  <value name="259999">Chemical Sciences not elsewhere classified</value>
+	</category>
+  </category>
+  <category name="260000" label="EARTH SCIENCES">
+	<category name="260100" label="GEOLOGY">
+	  <value name="260101">Mineralogy and Crystallography</value>
+	  <value name="260102">Igneous and Metamorphic Petrology</value>
+	  <value name="260103">Vulcanology</value>
+	  <value name="260104">Sedimentology</value>
+	  <value name="260105">Petroleum Geology</value>
+	  <value name="260106">Ore Deposit Petrology</value>
+	  <value name="260107">Structural Geology</value>
+	  <value name="260108">Geotectonics</value>
+	  <value name="260109">Geochronology</value>
+	  <value name="260110">Biostratigraphy</value>
+	  <value name="260111">Other Stratigraphy (incl. Sequence Stratigraphy)</value>
+	  <value name="260112">Palaeontology</value>
+	  <value name="260113">Palynology</value>
+	  <value name="260114">Geomorphology</value>
+	  <value name="260115">Glaciology</value>
+	  <value name="260199">Geology not elsewhere classified</value>
+	</category>
+	<category name="260200" label="GEOPHYSICS">
+	  <value name="260201">Gravity</value>
+	  <value name="260202">Geomagnetism</value>
+	  <value name="260203">Electromagnetism</value>
+	  <value name="260204">Petrophysics</value>
+	  <value name="260205">Explosion Seismology</value>
+	  <value name="260206">Earthquake Seismology</value>
+	  <value name="260207">Radiometrics</value>
+	  <value name="260299">Geophysics not elsewhere classified</value>
+	</category>
+	<category name="260300" label="GEOCHEMISTRY">
+	  <value name="260301">Geochronology and Isotope Geochemistry</value>
+	  <value name="260302">Exploration Geochemistry</value>
+	  <value name="260303">Organic Geochemistry not elsewhere classified</value>
+	  <value name="260304">Inorganic Geochemistry not elsewhere classified</value>
+	  <value name="260399">Geochemistry not elsewhere classified</value>
+	</category>
+	<category name="260400" label="OCEANOGRAPHY">
+	  <value name="260401">Biological Oceanography</value>
+	  <value name="260402">Chemical Oceanography</value>
+	  <value name="260403">Physical Oceanography</value>
+	  <value name="260499">Oceanography not elsewhere classified</value>
+	</category>
+	<category name="260500" label="HYDROLOGY">
+	  <value name="260501">Groundwater Hydrology</value>
+	  <value name="260502">Surfacewater Hydrology</value>
+	  <value name="260599">Hydrology not elsewhere classified</value>
+	</category>
+	<category name="260600" label="ATMOSPHERIC SCIENCES">
+	  <value name="260601">Meteorology</value>
+	  <value name="260602">Climatology (incl. Palaeoclimatology)</value>
+	  <value name="260603">Ionospheric and Magnetospheric Physics</value>
+	  <value name="260699">Atmospheric Sciences not elsewhere classified</value>
+	</category>
+	<category name="269900" label="OTHER EARTH SCIENCES">
+	  <value name="269901">Physical Geography</value>
+	  <value name="269999">Earth Sciences not elsewhere classified</value>
+   </category>
+  </category>
+  <category name="270000" label="BIOLOGICAL SCIENCES">
+	<category name="270100" label="BIOCHEMISTRY AND CELL BIOLOGY">
+	  <value name="270101">Analytical Biochemistry</value>
+	  <value name="270102">Cell Metabolism</value>
+	  <value name="270103">Protein Targeting and Signal Transduction</value>
+	  <value name="270104">Membrane Biology</value>
+	  <value name="270105">Cellular Interactions (incl. Adhesion, Matrix, Cell Wall)</value>
+	  <value name="270106">Cell Development (incl. Cell Division and Apoptosis)</value>
+	  <value name="270107">Cell Neurochemistry</value>
+	  <value name="270108">Enzymes</value>
+	  <value name="270199">Biochemistry and Cell Biology not elsewhere classified</value>
+	</category>
+	<category name="270200" label="GENETICS">
+	  <value name="270201">Gene Expression</value>
+	  <value name="270202">Genome Structure</value>
+	  <value name="270203">Population and Ecological Genetics</value>
+	  <value name="270204">Anthropological Genetics</value>
+	  <value name="270205">Genetic Development (incl. Sex Determination)</value>
+	  <value name="270206">Genetic Immunology</value>
+	  <value name="270207">Quantitative Genetics</value>
+	  <value name="270208">Molecular Evolution</value>
+	  <value name="270209">Meiosis and Recombination</value>
+	  <value name="270210">Neurogenetics</value>
+	  <value name="270299">Genetics not elsewhere classified</value>
+	</category>
+	<category name="270300" label="MICROBIOLOGY">
+	  <value name="270301">Bacteriology</value>
+	  <value name="270302">Archaebacteriology</value>
+	  <value name="270303">Virology</value>
+	  <value name="270304">Infectious Agents</value>
+	  <value name="270305">Mycology</value>
+	  <value name="270306">Microbial Genetics</value>
+	  <value name="270307">Microbial Ecology</value>
+	  <value name="270308">Microbial Systematics, Taxonomy and Phylogeny</value>
+	  <value name="270399">Microbiology not elsewhere classified</value>
+	</category>
+	<category name="270400" label="BOTANY">
+	  <value name="270401">Plant Systematics, Taxonomy and Phylogeny</value>
+	  <value name="270402">Plant Physiology</value>
+	  <value name="270403">Plant Pathology</value>
+	  <value name="270404">Phycology</value>
+	  <value name="270499">Botany not elsewhere classified</value>
+	</category>
+	<category name="270500" label="ZOOLOGY">
+	  <value name="270501">Animal Systematics, Taxonomy and Phylogeny</value>
+	  <value name="270502">Neurobiology</value>
+	  <value name="270503">Animal Anatomy and Histology</value>
+	  <value name="270504">Invertebrate Biology</value>
+	  <value name="270599">Zoology not elsewhere classified</value>
+	</category>
+	<category name="270600" label="PHYSIOLOGY">
+	  <value name="270601">Animal Physiology - Biophysics</value>
+	  <value name="270602">Animal Physiology - Cell</value>
+	  <value name="270603">Animal Physiology - Systems</value>
+	  <value name="270604">Comparative Physiology</value>
+	  <value name="270699">Physiology not elsewhere classified</value>
+	</category>
+	<category name="270700" label="ECOLOGY AND EVOLUTION">
+	  <value name="270701">Freshwater Ecology</value>
+	  <value name="270702">Marine and Estuarine Ecology (incl. Marine Ichthyology)</value>
+	  <value name="270703">Terrestrial Ecology</value>
+	  <value name="270704">Landscape Ecology</value>
+	  <value name="270705">Palaeoecology</value>
+	  <value name="270706">Life Histories (incl. Population Ecology)</value>
+	  <value name="270707">Sociobiology and Behavioural Ecology</value>
+	  <value name="270708">Conservation and Biodiversity</value>
+	  <value name="270709">Biogeography</value>
+	  <value name="270799">Ecology and Evolution not elsewhere classified</value>
+	</category>
+	<category name="270800" label="BIOTECHNOLOGY">
+	  <value name="270801">Gene Therapy</value>
+	  <value name="270802">Diagnostic Applications</value>
+	  <value name="270803">Transgenesis</value>
+	  <value name="270804">Genetic Technologies: Transformation, Site-directed Mutagenesis, etc.</value>
+	  <value name="270805">Genetic Engineering and Enzyme Technology</value>
+	  <value name="270899">Biotechnology not elsewhere classified</value>
+	</category>
+	<category name="279900" label="OTHER BIOLOGICAL SCIENCES">
+	  <value name="279901">Global Change Biology</value>
+	  <value name="279999">Biological Sciences not elsewhere classified</value>
+	</category>
+  </category>
+  <category name="280000" label="INFORMATION, COMPUTING AND COMMUNICATION SCIENCES">
+	<category name="280100" label="INFORMATION SYSTEMS">
+	  <value name="280101">Information Systems Organisation</value>
+	  <value name="280102">Information Systems Management</value>
+	  <value name="280103">Information Storage, Retrieval and Management</value>
+	  <value name="280104">Computer-Human Interaction</value>
+	  <value name="280105">Interfaces and Presentation (excl. Computer-Human Interaction)</value>
+	  <value name="280106">Interorganisational Information Systems</value>
+	  <value name="280107">Global Information Systems</value>
+	  <value name="280108">Database Management</value>
+	  <value name="280109">Decision Support and Group Support Systems</value>
+	  <value name="280110">Systems Theory</value>
+	  <value name="280111">Conceptual Modelling</value>
+	  <value name="280112">Information Systems Development Methodologies</value>
+	  <value name="280199">Information Systems not elsewhere classified</value>
+	</category>
+	<category name="280200" label="ARTIFICIAL INTELLIGENCE AND SIGNAL AND IMAGE PROCESSING">
+	  <value name="280201">Expert Systems</value>
+	  <value name="280202">Computer Graphics</value>
+	  <value name="280203">Image Processing</value>
+	  <value name="280204">Signal Processing</value>
+	  <value name="280205">Text Processing</value>
+	  <value name="280206">Speech Recognition</value>
+	  <value name="280207">Pattern Recognition</value>
+	  <value name="280208">Computer Vision</value>
+	  <value name="280209">Intelligent Robotics</value>
+	  <value name="280210">Simulation and Modelling</value>
+	  <value name="280211">Virtual Reality and Related Simulation</value>
+	  <value name="280212">Neural Networks, Genetic Alogrithms and Fuzzy Logic</value>
+	  <value name="280213">Other Artificial Intelligence</value>
+	</category>
+	<category name="280300" label="COMPUTER SOFTWARE">
+	  <value name="280301">Programming Techniques</value>
+	  <value name="280302">Software Engineering</value>
+	  <value name="280303">Programming Languages</value>
+	  <value name="280304">Operating Systems</value>
+	  <value name="280305">Multimedia Programming</value>
+	  <value name="280399">Computer Software not elsewhere classified</value>
+	</category>
+	<category name="280400" label="COMPUTATION THEORY AND MATHEMATICS">
+	  <value name="280401">Analysis of Algorithms and Complexity</value>
+	  <value name="280402">Mathematical Logic and Formal Languages</value>
+	  <value name="280403">Logics and Meanings of Programs</value>
+	  <value name="280404">Numerical Analysis</value>
+	  <value name="280405">Discrete Mathematics</value>
+	  <value name="280406">Mathematical Software</value>
+	  <value name="280499">Computation Theory and Mathematics not elsewhere classified</value>
+	</category>
+	<category name="280500" label="DATA FORMAT">
+	  <value name="280501">Data Structures</value>
+	  <value name="280502">Data Storage Representations</value>
+	  <value name="280503">Files</value>
+	  <value name="280504">Data Encryption</value>
+	  <value name="280505">Data Security</value>
+	  <value name="280506">Coding and Information Theory</value>
+	  <value name="280599">Data Format not elsewhere classified</value>
+	</category>
+	<category name="289900" label="OTHER INFORMATION, COMPUTING AND COMMUNICATION SCIENCES">
+	  <value name="289999">Other Information, Computing and Communication Sciences</value>
+	</category>
+  </category>
+  <category name="290000" label="ENGINEERING AND TECHNOLOGY">
+	<category name="290100" label="INDUSTRIAL BIOTECHNOLOGY AND FOOD SCIENCES">
+	  <value name="290101">Fermentation, Biotechnology and Industrial Microbiology</value>
+	  <value name="290102">Food Engineering</value>
+	  <value name="290103">Food Processing</value>
+	  <value name="290104">Other Food Sciences</value>
+	  <value name="290105">Other Industrial Biotechnology</value>
+	</category>
+	<category name="290200" label="AEROSPACE ENGINEERING">
+	  <value name="290201">Aerodynamics</value>
+	  <value name="290202">Flight Dynamics</value>
+	  <value name="290203">Aerospace Structures</value>
+	  <value name="290204">Aircraft Performance</value>
+	  <value name="290205">Flight Control Systems</value>
+	  <value name="290206">Aerospace Electrical Systems</value>
+	  <value name="290207">Satellite, Space Vehicle and Missile Design</value>
+	  <value name="290299">Aerospace Engineering not elsewhere classified</value>
+	</category>
+	<category name="290300" label="MANUFACTURING ENGINEERING">
+	  <value name="290301">Robotics and Mechatronics</value>
+	  <value name="290302">Flexible Manufacturing Systems</value>
+	  <value name="290303">CAD/CAM Systems</value>
+	  <value name="290304">Control Engineering</value>
+	  <value name="290305">Welding Technology</value>
+	  <value name="290306">Textile Technology</value>
+	  <value name="290307">Printing Technology</value>
+	  <value name="290308">Packaging, Storage and Transportation</value>
+	  <value name="290309">Safety and Quality</value>
+	  <value name="290399">Manufacturing Engineering not elsewhere classified</value>
+	</category>
+	<category name="290400" label="AUTOMOTIVE ENGINEERING">
+	  <value name="290401">Automotive Engineering</value>
+	</category>
+	<category name="290500" label="MECHANICAL AND INDUSTRIAL ENGINEERING">
+	  <value name="290501">Mechanical Engineering</value>
+	  <value name="290502">Industrial Engineering</value>
+	</category>
+	<category name="290600" label="CHEMICAL ENGINEERING">
+	  <value name="290601">Chemical Engineering Design</value>
+	  <value name="290602">Process Control and Simulation</value>
+	  <value name="290603">Membrane and Separation Technologies</value>
+	  <value name="290699">Chemical Engineering not elsewhere classified</value>
+	</category>
+	<category name="290700" label="RESOURCES ENGINEERING">
+	  <value name="290701">Mining Engineering</value>
+	  <value name="290702">Mineral Processing</value>
+	  <value name="290703">Petroleum and Reservoir Engineering</value>
+	  <value name="290704">Geomechanics</value>
+	  <value name="290799">Resources Engineering not elsewhere classified</value>
+	</category>
+	<category name="290800" label="CIVIL ENGINEERING">
+	  <value name="290801">Structural Engineering</value>
+	  <value name="290802">Water and Sanitary Engineering</value>
+	  <value name="290803">Transport Engineering</value>
+	  <value name="290804">Construction Engineering</value>
+	  <value name="290805">Geotechnical Engineering</value>
+	  <value name="290899">Civil Engineering not elsewhere classified</value>
+	</category>
+	<category name="290900" label="ELECTRICAL AND ELECTRONIC ENGINEERING">
+	  <value name="290901">Electrical Engineering</value>
+	  <value name="290902">Integrated Circuits</value>
+	  <value name="290903">Other Electronic Engineering</value>
+	</category>
+	<category name="291000" label="GEOMATIC ENGINEERING">
+	  <value name="291001">Geodesy</value>
+	  <value name="291002">Surveying</value>
+	  <value name="291003">Photogrammetry and Remote Sensing</value>
+	  <value name="291004">Spatial Information Systems</value>
+	  <value name="291005">Navigation and Position Fixing</value>
+	  <value name="291006">Cartography</value>
+	  <value name="291099">Geomatic Engineering not elsewhere classified</value>
+	</category>
+	<category name="291100" label="ENVIRONMENTAL ENGINEERING">
+	  <value name="291101">Environmental Engineering Modelling</value>
+	  <value name="291102">Bio-remediation</value>
+	  <value name="291103">Environmental Engineering Design</value>
+	  <value name="291104">Environmental Technologies</value>
+	  <value name="291199">Environmental Engineering not elsewhere classified</value>
+	</category>
+	<category name="291200" label="MARITIME ENGINEERING">
+	  <value name="291201">Naval Architecture</value>
+	  <value name="291202">Ship and Platform Hydrodynamics</value>
+	  <value name="291203">Ship and Platform Structures</value>
+	  <value name="291204">Marine Engineering</value>
+	  <value name="291205">Ocean Engineering</value>
+	  <value name="291206">Special Vehicles</value>
+	  <value name="291299">Maritime Engineering not elsewhere classified</value>
+	</category>
+	<category name="291300" label="METALLURGY">
+	  <value name="291301">Process Metallurgy</value>
+	  <value name="291302">Physical Metallurgy</value>
+	</category>
+	<category name="291400" label="MATERIALS ENGINEERING">
+	  <value name="291401">Polymers</value>
+	  <value name="291402">Composite Materials</value>
+	  <value name="291403">Alloy Materials</value>
+	  <value name="291404">Ceramics</value>
+	  <value name="291405">Timber</value>
+	  <value name="291406">Pulp and Paper</value>
+	  <value name="291407">Plastics</value>
+	  <value name="291499">Materials Engineering not elsewhere classified</value>
+	</category>
+	<category name="291500" label="BIOMEDICAL ENGINEERING">
+	  <value name="291501">Clinical Engineering</value>
+	  <value name="291502">Rehabilitation Engineering</value>
+	  <value name="291503">Biomaterials</value>
+	  <value name="291504">Biomechanical Engineering</value>
+	  <value name="291599">Biomedical Engineering not elsewhere classified</value>
+	</category>
+	<category name="291600" label="COMPUTER HARDWARE">
+	  <value name="291601">Arithmetic and Logic Structures</value>
+	  <value name="291602">Memory Structures</value>
+	  <value name="291603">Input, Output and Data Devices</value>
+	  <value name="291604">Logic Design</value>
+	  <value name="291605">Processor Architectures</value>
+	  <value name="291699">Computer Hardware not elsewhere classified</value>
+	</category>
+	<category name="291700" label="COMMUNICATIONS TECHNOLOGIES">
+	  <value name="291701">Antenna Technology</value>
+	  <value name="291702">Optical and Photonic Systems</value>
+	  <value name="291703">Digital Systems</value>
+	  <value name="291704">Computer Communications Networks</value>
+	  <value name="291705">Microwave and Millimetrewave Technology</value>
+	  <value name="291706">Broadband Network Technology</value>
+	  <value name="291707">Modem Technology</value>
+	  <value name="291708">Baseband Technology</value>
+	  <value name="291709">Satellite Communications</value>
+	  <value name="291710">Radio Communications and Broadcasting not elsewhere classified</value>
+	  <value name="291799">Communications Technologies not elsewhere classified</value>
+	</category>
+	<category name="291800" label="INTERDISCIPLINARY ENGINEERING">
+	  <value name="291801">Fluidization and Fluid Mechanics</value>
+	  <value name="291802">Heat and Mass Transfer Operations</value>
+	  <value name="291803">Turbulent Flows</value>
+	  <value name="291804">Nanotechnology</value>
+	  <value name="291899">Interdisciplinary Engineering not elsewhere classified</value>
+	</category>
+	<category name="299900" label="OTHER ENGINEERING AND TECHNOLOGY">
+	  <value name="299901">Agricultural Engineering</value>
+	  <value name="299902">Combustion and Fuel Engineering</value>
+	  <value name="299903">Biosensor Technologies</value>
+	  <value name="299904">Engineering/Technology Instrumentation</value>
+	  <value name="299999">Engineering and Technology not elsewhere classified</value>
+	</category>
+  </category>
+  <category name="300000" label="AGRICULTURAL, VETERINARY AND ENVIRONMENTAL SCIENCES">
+	<category name="300100" label="SOIL AND WATER SCIENCES">
+	  <value name="300101">Soil Physics</value>
+	  <value name="300102">Soil Biology</value>
+	  <value name="300103">Soil Chemistry</value>
+	  <value name="300104">Land Capability and Soil Degradation</value>
+	  <value name="300105">Applied Hydrology (Drainage, Flooding, Irrigation, Quality, etc.)</value>
+	  <value name="300199">Soil and Water Sciences not elsewhere classified</value>
+	</category>
+	<category name="300200" label="CROP AND PASTURE PRODUCTION">
+	  <value name="300201">Plant Biochemistry and Physiology</value>
+	  <value name="300202">Plant Nutrition</value>
+	  <value name="300203">Plant Improvement (Selection, Breeding and Genetic Engineering)</value>
+	  <value name="300204">Plant Protection (Pests, Diseases and Weeds)</value>
+	  <value name="300205">Agronomy</value>
+	  <value name="300206">Post Harvest Technologies (Transportation and Storage)</value>
+	  <value name="300299">Crop and Pasture Production not elsewhere classified</value>
+	</category>
+	<category name="300300" label="HORTICULTURE">
+	  <value name="300301">Plant Improvement (Selection, Breeding and Genetic Engineering)</value>
+	  <value name="300302">Plant Growth and Development</value>
+	  <value name="300303">Plant Protection (Pests, Diseases and Weeds)</value>
+	  <value name="300304">Post Harvest Technologies</value>
+	  <value name="300305">Oenology and Viticulture</value>
+	  <value name="300399">Horticulture not elsewhere classified</value>
+	</category>
+	<category name="300400" label="ANIMAL PRODUCTION">
+	  <value name="300401">Animal Breeding</value>
+	  <value name="300402">Animal Reproduction</value>
+	  <value name="300403">Animal Nutrition</value>
+	  <value name="300404">Animal Husbandry</value>
+	  <value name="300405">Animal Protection (Pests and Pathogens)</value>
+	  <value name="300406">Animal Growth and Development</value>
+	  <value name="300499">Animal Production not elsewhere classified</value>
+	</category>
+	<category name="300500" label="VETERINARY SCIENCES">
+	  <value name="300501">Veterinary Medicine</value>
+	  <value name="300502">Anaesthesiology and Intensive Care</value>
+	  <value name="300503">Epidemiology</value>
+	  <value name="300504">Immunology</value>
+	  <value name="300505">Anatomy and Physiology</value>
+	  <value name="300506">Pathology</value>
+	  <value name="300507">Microbiology (excl. Virology)</value>
+	  <value name="300508">Parasitology</value>
+	  <value name="300509">Radiology and Imaging</value>
+	  <value name="300510">Virology</value>
+	  <value name="300511">Surgery</value>
+	  <value name="300512">Pharmacology</value>
+	  <value name="300599">Veterinary Sciences not elsewhere classified</value>
+	</category>
+	<category name="300600" label="FORESTRY SCIENCES">
+	  <value name="300601">Nutrition and Physiology</value>
+	  <value name="300602">Tree Improvement (Selection, Breeding and Genetic Engineering)</value>
+	  <value name="300603">Pests, Health and Diseases</value>
+	  <value name="300604">Management and Environment</value>
+	  <value name="300605">Fire Management</value>
+	  <value name="300606">Agroforestry</value>
+	  <value name="300699">Forestry Sciences not elsewhere classified</value>
+	</category>
+	<category name="300700" label="FISHERIES SCIENCES">
+	  <value name="300701">Physiology and Genetics</value>
+	  <value name="300702">Pests and Diseases</value>
+	  <value name="300703">Aquaculture</value>
+	  <value name="300704">Ecosystem Studies and Stock Assessment</value>
+	  <value name="300705">Evaluation of Management Strategies</value>
+	  <value name="300799">Fisheries Sciences not elsewhere classified</value>
+	</category>
+	<category name="300800" label="ENVIRONMENTAL SCIENCES">
+	  <value name="300801">Environmental Management and Rehabilitation</value>
+	  <value name="300802">Wildlife and Habitat Management</value>
+	  <value name="300803">Natural Resource Management</value>
+	  <value name="300804">Environmental Impact Assessment</value>
+	  <value name="300805">Conservation</value>
+	  <value name="300899">Environmental Sciences not elsewhere classified</value>
+	</category>
+	<category name="300900" label="LAND, PARKS AND AGRICULTURE MANAGEMENT">
+	  <value name="300901">Farm Management, Rural Management and Agribusiness</value>
+	  <value name="300902">Land and Parks Management</value>
+	  <value name="300903">Sustainable Development</value>
+	  <value name="300999">Land, Parks and Agriculture Management not elsewhere classified</value>
+	</category>
+	<category name="309900" label="OTHER AGRICULTURAL, VETERINARY AND ENVIRONMENTAL SCIENCES">
+	  <value name="309901">Fertilisers and Agrochemicals (Application etc.)</value>
+	  <value name="309902">Education and Extension</value>
+	  <value name="309999">Agricultural, Veterinary and Environmental Sciences not elsewhere classified</value>
+   </category>
+  </category>
+  <category name="310000" label="ARCHITECTURE, URBAN ENVIRONMENT AND BUILDING">
+	<category name="310100" label="ARCHITECTURE AND URBAN ENVIRONMENT">
+	  <value name="310101">Architecture</value>
+	  <value name="310102">Heritage and Conservation</value>
+	  <value name="310103">Urban and Regional Planning</value>
+	  <value name="310104">Landscape Planning</value>
+	  <value name="310105">History of the Built Environment</value>
+	  <value name="310106">Interior and Environmental Design</value>
+	  <value name="310199">Architecture and Urban Environment not elsewhere classified</value>
+	</category>
+	<category name="310200" label="BUILDING">
+	  <value name="310201">Building Science and Techniques</value>
+	  <value name="310202">Building Construction Management</value>
+	  <value name="310203">Building Construction Economics (incl. Quantity Surveying)</value>
+	  <value name="310299">Building not elsewhere classified</value>
+	</category>
+	<category name="319900" label="OTHER ARCHITECTURE, URBAN ENVIRONMENT AND BUILDING">
+	  <value name="319999">Other Architecture, Urban Environment and Building</value>
+	</category>
+  </category>
+  <category name="320000" label="MEDICAL AND HEALTH SCIENCES">
+	<category name="320100" label="MEDICINE - GENERAL">
+	</category>
+	<category name="320200" label="IMMUNOLOGY">
+	  <value name="320201">Allergy</value>
+	  <value name="320202">Cellular Immunology</value>
+	  <value name="320203">Humoral Immunology and Immunochemistry</value>
+	  <value name="320204">Immunogenetics</value>
+	  <value name="320205">Transplantation Immunology</value>
+	  <value name="320206">Tumor Immunology</value>
+	  <value name="320207">Autoimmunity</value>
+	  <value name="320299">Immunology not elsewhere classified</value>
+	</category>
+	<category name="320300" label="MEDICAL BIOCHEMISTRY AND CLINICAL CHEMISTRY">
+	  <value name="320301">Clinical Chemistry</value>
+	  <value name="320302">Medical Biochemistry: Carbohydrates</value>
+	  <value name="320303">Medical Biochemistry: Lipids</value>
+	  <value name="320304">Medical Biochemistry: Nucleic Acids</value>
+	  <value name="320305">Medical Biochemistry: Proteins and Peptides</value>
+	  <value name="320306">Medical Biochemistry: Phospholipids</value>
+	  <value name="320307">Medical Biochemistry: Other</value>
+	</category>
+	<category name="320400" label="MEDICAL MICROBIOLOGY">
+	  <value name="320401">Medical Bacteriology</value>
+	  <value name="320402">Medical Virology</value>
+	  <value name="320403">Medical Infection Agents (incl. Prions)</value>
+	  <value name="320404">Medical Mycology</value>
+	  <value name="320405">Medical Parasitology</value>
+	  <value name="320499">Medical Microbiology not elsewhere classified</value>
+	</category>
+	<category name="320500" label="PHARMACOLOGY AND PHARMACEUTICAL SCIENCES">
+	  <value name="320501">Pharmaceutical Sciences and Pharmacy</value>
+	  <value name="320502">Basic Pharmacology</value>
+	  <value name="320503">Clinical Pharmacology and Therapeutics</value>
+	  <value name="320504">Toxicology (incl. Clinical Toxicology)</value>
+	  <value name="320599">Pharmacology not elsewhere classified</value>
+	</category>
+	<category name="320600" label="MEDICAL PHYSIOLOGY">
+	  <value name="320601">Human Biophysics</value>
+	  <value name="320602">Cell Physiology</value>
+	  <value name="320603">Systems Physiology</value>
+	  <value name="320699">Medical Physiology not elsewhere classified</value>
+	</category>
+	<category name="320700" label="NEUROSCIENCES">
+	  <value name="320701">Autonomic Nervous System</value>
+	  <value name="320702">Central Nervous System</value>
+	  <value name="320703">Peripheral Nervous System</value>
+	  <value name="320704">Cellular Nervous System</value>
+	  <value name="320705">Sensory Systems</value>
+	  <value name="320799">Neurosciences not elsewhere classified</value>
+	</category>
+	<category name="320800" label="DENTISTRY">
+	  <value name="320801">Oral Surgery</value>
+	  <value name="320802">Dentistry Support</value>
+	  <value name="320803">Dental Technology</value>
+	  <value name="320804">Dental Therapy</value>
+	  <value name="320899">Dentistry not elsewhere classified</value>
+	</category>
+	<category name="320900" label="OPTOMETRY">
+	  <value name="320901">Optical Technology</value>
+	  <value name="320999">Optometry not elsewhere classified</value>
+	</category>
+	<category name="321000" label="CLINICAL SCIENCES">
+	  <value name="321001">Anaesthesiology</value>
+	  <value name="321002">Dermatology</value>
+	  <value name="321003">Cardiology (incl. Cardiovascular Diseases)</value>
+	  <value name="321004">Endocrinology</value>
+	  <value name="321005">Fetal Development and Medicine</value>
+	  <value name="321006">Gastroenterology and Hepatology</value>
+	  <value name="321007">Geriatrics and Gerontology</value>
+	  <value name="321008">Haematology</value>
+	  <value name="321009">Intensive Care</value>
+	  <value name="321010">Infectious Diseases</value>
+	  <value name="321011">Medical Genetics</value>
+	  <value name="321012">Nephrology and Urology</value>
+	  <value name="321013">Neurology and Neuromuscular Diseases</value>
+	  <value name="321014">Obstetrics and Gynaecology</value>
+	  <value name="321015">Oncology and Carcinogenesis</value>
+	  <value name="321016">Opthalmology and Vision Science</value>
+	  <value name="321017">Orthopaedics</value>
+	  <value name="321018">Otorhinolaryngology</value>
+	  <value name="321019">Paediatrics</value>
+	  <value name="321020">Pathology</value>
+	  <value name="321021">Psychiatry</value>
+	  <value name="321022">Radiology and Organ Imaging</value>
+	  <value name="321023">Radiotherapy and Nuclear Medicine</value>
+	  <value name="321024">Rehabilitation and Therapy: Occupational and Physical</value>
+	  <value name="321025">Rehabilitation and Therapy: Hearing and Speech</value>
+	  <value name="321026">Reproduction</value>
+	  <value name="321027">Respiratory Diseases</value>
+	  <value name="321028">Rheumatology and Arthritis</value>
+	  <value name="321029">Surgery</value>
+	  <value name="321030">Venereology</value>
+	  <value name="321099">Clinical Sciences not elsewhere classified</value>
+	</category>
+	<category name="321100" label="NURSING">
+	  <value name="321101">Midwifery</value>
+	  <value name="321102">Clinical Nursing: Primary (Preventative)</value>
+	  <value name="321103">Clinical Nursing: Secondary (Acute Care)</value>
+	  <value name="321104">Clinical Nursing: Tertiary (Rehabilitative)</value>
+	  <value name="321105">Mental Health Nursing</value>
+	  <value name="321106">Aged care Nursing</value>
+	  <value name="321199">Nursing not elsewhere classified</value>
+	</category>
+	<category name="321200" label="PUBLIC HEALTH AND HEALTH SERVICES">
+	  <value name="321201">Environmental and Occupational Health and Safety</value>
+	  <value name="321202">Epidemiology</value>
+	  <value name="321203">Health Information Systems (incl. Surveillance)</value>
+	  <value name="321204">Mental Health</value>
+	  <value name="321205">Nutrition and Dietetics</value>
+	  <value name="321206">Preventive Medicine</value>
+	  <value name="321207">Indigenous Health</value>
+	  <value name="321208">Primary Health Care</value>
+	  <value name="321209">Family Care</value>
+	  <value name="321210">Community Child Health</value>
+	  <value name="321211">Residential Client Care</value>
+	  <value name="321212">Care for Disabled</value>
+	  <value name="321213">Human Bioethics</value>
+	  <value name="321214">Health and Community Services</value>
+	  <value name="321215">Health Care Administration</value>
+	  <value name="321216">Health Promotion</value>
+	  <value name="321217">Health Counselling</value>
+	  <value name="321299">Public Health and Health Services not elsewhere classified</value>
+	</category>
+	<category name="321300" label="COMPLEMENTARY/ALTERNATIVE MEDICINE">
+	  <value name="321301">Oriental Medicine and Treatments</value>
+	  <value name="321302">Chiropractic</value>
+	  <value name="321303">Naturopathy</value>
+	  <value name="321399">Complementary/Alternative Medicine not elsewhere classified</value>
+	</category>
+	<category name="321400" label="HUMAN MOVEMENT AND SPORTS SCIENCE">
+	  <value name="321401">Exercise Physiology</value>
+	  <value name="321402">Biomechanics</value>
+	  <value name="321403">Motor Control</value>
+	  <value name="321404">Sport and Exercise Psychology</value>
+	  <value name="321405">Sports Medicine</value>
+	  <value name="321499">Human Movement and Sports Science not elsewhere classified</value>
+	</category>
+	<category name="329900" label="OTHER MEDICAL AND HEALTH SCIENCES">
+	  <value name="329901">Podiatry</value>
+	  <value name="329902">Medical Biotechnology</value>
+	  <value name="329903">Therapies and Therapeutic Technology</value>
+	  <value name="329999">Medical and Health Sciences not elsewhere classified</value>
+	</category>
+  </category>
+  <category name="330000" label="EDUCATION">
+	<category name="330100" label="EDUCATION STUDIES">
+	  <value name="330101">Educational Psychology</value>
+	  <value name="330102">History and Philosophy of Education</value>
+	  <value name="330103">Sociology of Education</value>
+	  <value name="330104">Educational Policy, Administration and Management</value>
+	  <value name="330105">Educational Counselling</value>
+	  <value name="330106">Comparative Education</value>
+	  <value name="330107">Educational Technology and Media</value>
+	  <value name="330108">Special Education</value>
+	  <value name="330109">Assessment and Evaluation</value>
+	  <value name="330199">Education Studies not elsewhere classified</value>
+	</category>
+	<category name="330200" label="CURRICULUM STUDIES">
+	  <value name="330201">Curriculum Studies: English Education</value>
+	  <value name="330202">Curriculum Studies: Mathematics Education</value>
+	  <value name="330203">Curriculum Studies: Science Education</value>
+	  <value name="330204">Curriculum Studies: Economics, Commerce, Management and Services Education</value>
+	  <value name="330205">Curriculum Studies: Other Social Sciences, Humanities and Arts Education</value>
+	  <value name="330206">Curriculum Theory and Development</value>
+	  <value name="330299">Curriculum Studies not elsewhere classified</value>
+	</category>
+	<category name="330300" label="PROFESSIONAL DEVELOPMENT OF TEACHERS">
+	  <value name="330301">Teacher Education: Early Childhood</value>
+	  <value name="330302">Teacher Education: Primary</value>
+	  <value name="330303">Teacher Education: Secondary</value>
+	  <value name="330304">Teacher Education: Vocational Education and Training</value>
+	  <value name="330305">Teacher Education: Higher Education</value>
+	  <value name="330306">Teacher Education: Special Education</value>
+	  <value name="330307">Teacher Education: Nursing and Health</value>
+	  <value name="330399">Professional Development of Teachers not elsewhere classified</value>
+	</category>
+	<category name="339900" label="OTHER EDUCATION">
+	  <value name="339999">Other Education</value>
+	</category>
+  </category>
+  <category name="340000" label="ECONOMICS">
+	<category name="340100" label="ECONOMIC THEORY">
+	  <value name="340101">Microeconomic Theory</value>
+	  <value name="340102">Macroeconomic Theory</value>
+	  <value name="340103">Mathematical Economics</value>
+	  <value name="340199">Economic Theory not elsewhere classified</value>
+	</category>
+	<category name="340200" label="APPLIED ECONOMICS">
+	  <value name="340201">Agricultural Economics</value>
+	  <value name="340202">Environment and Resource Economics</value>
+	  <value name="340203">Finance Economics</value>
+	  <value name="340204">Health Economics</value>
+	  <value name="340205">Industry Economics and Industrial Organisation</value>
+	  <value name="340206">International Economics and International Finance</value>
+	  <value name="340207">Labour Economics</value>
+	  <value name="340208">Macroeconomics (incl. Monetary and Fiscal Theory)</value>
+	  <value name="340209">Public Sector Economics</value>
+	  <value name="340210">Welfare Economics</value>
+	  <value name="340211">Transport Economics</value>
+	  <value name="340212">Economic Geography</value>
+	  <value name="340213">Economic Development and Growth</value>
+	  <value name="340214">Urban and Regional Economics</value>
+	  <value name="340299">Applied Economics not elsewhere classified</value>
+	</category>
+	<category name="340300" label="ECONOMIC HISTORY AND HISTORY OF ECONOMIC THOUGHT">
+	  <value name="340301">Economic History</value>
+	  <value name="340302">History of Economic Thought</value>
+	</category>
+	<category name="340400" label="ECONOMETRICS">
+	  <value name="340401">Economic Models and Forecasting</value>
+	  <value name="340402">Econometric and Statistical Methods</value>
+	  <value name="340403">Time-Series Analysis</value>
+	  <value name="340404">Cross-Sectional Analysis</value>
+	  <value name="340405">Panel Data Analysis</value>
+	  <value name="340499">Econometrics not elsewhere classified</value>
+	</category>
+	<category name="349900" label="OTHER ECONOMICS">
+	  <value name="349901">Political Economy</value>
+	  <value name="349902">Comparative Economic Systems</value>
+	  <value name="349999">Economics not elsewhere classified</value>
+	</category>
+  </category>
+  <category name="350000" label="COMMERCE, MANAGEMENT, TOURISM AND SERVICES">
+	<category name="350100" label="ACCOUNTING, AUDITING AND ACCOUNTABILITY">
+	  <value name="350101">Financial Accounting</value>
+	  <value name="350102">Management Accounting</value>
+	  <value name="350103">Auditing and Accountability</value>
+	  <value name="350104">Taxation</value>
+	  <value name="350105">Bookkeeping</value>
+	  <value name="350106">International Accounting</value>
+	  <value name="350107">Other Accounting</value>
+	</category>
+	<category name="350200" label="BUSINESS AND MANAGEMENT">
+	  <value name="350201">Human Resources Management</value>
+	  <value name="350202">Business Information Systems (incl. Data Processing)</value>
+	  <value name="350203">Industrial Relations</value>
+	  <value name="350204">Marketing and Market Research</value>
+	  <value name="350205">Sales and Distribution</value>
+	  <value name="350206">Advertising and Public Relations</value>
+	  <value name="350207">Office Services</value>
+	  <value name="350208">Organisational Planning and Management</value>
+	  <value name="350209">Small Business Management</value>
+	  <value name="350210">Quality Management</value>
+	  <value name="350211">Innovation and Technology Management</value>
+	  <value name="350212">International Business</value>
+	  <value name="350213">Electronic Commerce</value>
+	  <value name="350299">Business and Management not elsewhere classified</value>
+	</category>
+	<category name="350300" label="BANKING, FINANCE AND INVESTMENT">
+	  <value name="350301">Finance</value>
+	  <value name="350302">Financial Econometrics</value>
+	  <value name="350303">Financial Institutions (incl. Banking)</value>
+	  <value name="350304">Insurance Studies</value>
+	  <value name="350399">Banking, Finance and Investment not elsewhere classified</value>
+	</category>
+	<category name="350400" label="TRANSPORTATION">
+	  <value name="350401">Aeronautical Transportation</value>
+	  <value name="350402">Aircrew Training</value>
+	  <value name="350403">Nautical Transportation</value>
+	  <value name="350404">Marine Crew Training</value>
+	  <value name="350405">Road and Rail Transportation</value>
+	  <value name="350499">Transportation not elsewhere classified</value>
+	</category>
+	<category name="350500" label="TOURISM">
+	  <value name="350501">Tourism Policy and Planning</value>
+	  <value name="350502">Tourism Resource Appraisal</value>
+	  <value name="350503">Impacts of Tourism</value>
+	  <value name="350504">Tourist Behaviour</value>
+	  <value name="350505">Tourism Economics</value>
+	  <value name="350506">Tourism Forecasting</value>
+	  <value name="350507">Tourism Management</value>
+	  <value name="350508">Tourism Marketing</value>
+	  <value name="350599">Tourism not elsewhere classified</value>
+	</category>
+	<category name="350600" label="SERVICES">
+	  <value name="350601">Hospitality Management</value>
+	  <value name="350602">Food and Hospitality Services</value>
+	  <value name="350603">Real Estate and Valuation</value>
+	  <value name="350604">Professional Services (Legal, Management Consulting, etc.)</value>
+	  <value name="350605">Other Retail Services</value>
+	  <value name="350606">Wholesale Services</value>
+	  <value name="350699">Services not elsewhere classified</value>
+	</category>
+	<category name="359900" label="OTHER COMMERCE, MANAGEMENT, TOURISM AND SERVICES">
+	  <value name="359999">Other Commerce, Management, Tourism and Services</value>
+	</category>
+  </category>
+  <category name="360000" label="POLICY AND POLITICAL SCIENCE">
+	<category name="360100" label="POLITICAL SCIENCE">
+	  <value name="360101">Australian Government and Politics</value>
+	  <value name="360102">Comparative Government and Politics</value>
+	  <value name="360103">Federalism and Intergovernmental Relations</value>
+	  <value name="360104">Political Theory and Political Philosophy</value>
+	  <value name="360105">International Relations</value>
+	  <value name="360199">Political Science not elsewhere classified</value>
+	</category>
+	<category name="360200" label="POLICY AND ADMINISTRATION">
+	  <value name="360201">Public Policy</value>
+	  <value name="360202">Public Administration</value>
+	  <value name="360203">Research, Science and Technology Policy</value>
+	  <value name="360204">Defence Studies</value>
+	  <value name="360299">Policy and Administration not elsewhere classified</value>
+	</category>
+	<category name="369900" label="OTHER POLICY AND POLITICAL SCIENCE">
+	  <value name="369999">Other Policy and Political Science</value>
+	</category>
+  </category>
+  <category name="370000" label="STUDIES IN HUMAN SOCIETY">
+	<category name="370100" label="SOCIOLOGY">
+	  <value name="370101">Social Theory</value>
+	  <value name="370102">Social Policy and Planning</value>
+	  <value name="370103">Race and Ethnic Relations</value>
+	  <value name="370104">Urban Sociology and Community Studies</value>
+	  <value name="370105">Applied Sociology, Program Evaluation and Social Impact Assessment</value>
+	  <value name="370106">Sociological Methodology and Research Methods</value>
+	  <value name="370107">Social Change</value>
+	  <value name="370199">Sociology not elsewhere classified</value>
+	</category>
+	<category name="370200" label="SOCIAL WORK">
+	  <value name="370201">Clinical Social Work Practice</value>
+	  <value name="370202">Social Program Evaluation</value>
+	  <value name="370203">Social Policy</value>
+	  <value name="370204">Counselling, Welfare and Community Services</value>
+	  <value name="370299">Social Work not elsewhere classified</value>
+	</category>
+	<category name="370300" label="ANTHROPOLOGY">
+	  <value name="370301">Biological (Physical) Anthropology</value>
+	  <value name="370302">Social and Cultural Anthropology</value>
+	  <value name="370303">Linguistic Anthropology</value>
+	  <value name="370399">Anthropology not elsewhere classified</value>
+	</category>
+	<category name="370400" label="HUMAN GEOGRAPHY">
+	  <value name="370401">Urban and Regional Studies</value>
+	  <value name="370402">Social and Cultural Geography</value>
+	  <value name="370403">Recreation and Leisure Studies</value>
+	  <value name="370499">Human Geography not elsewhere classified</value>
+	</category>
+	<category name="370500" label="DEMOGRAPHY">
+	  <value name="370501">Population Trends and Policies</value>
+	  <value name="370502">Migration</value>
+	  <value name="370503">Fertility</value>
+	  <value name="370504">Family and Household Studies</value>
+	  <value name="370599">Demography not elsewhere classified</value>
+	</category>
+	<category name="370600" label="HISTORY AND PHILOSOPHY OF SCIENCE AND MEDICINE">
+	  <value name="370601">History and Philosophy of Science and Technology</value>
+	  <value name="370602">Sociology and Social Studies of Science and Technology</value>
+	  <value name="370603">History and Philosophy of Medicine</value>
+	  <value name="370699">History and Philosophy of Science and Medicine not elsewhere classified</value>
+	</category>
+	<category name="379900" label="OTHER STUDIES IN HUMAN SOCIETY">
+	  <value name="379901">Gender Specific Studies</value>
+	  <value name="379902">Aboriginal Studies</value>
+	  <value name="379999">Studies in Human Society not elsewhere classified</value>
+	</category>
+  </category>
+  <category name="380000" label="BEHAVIOURAL AND COGNITIVE SCIENCES">
+	<category name="380100" label="PSYCHOLOGY">
+	  <value name="380101">Sensory Processes, Perception and Performance</value>
+	  <value name="380102">Learning, Memory, Cognition and Language</value>
+	  <value name="380103">Biological Psychology (Neuropsychology, Psychopharmacology, Physiological Psychology)</value>
+	  <value name="380104">Personality, Abilities and Assessment</value>
+	  <value name="380105">Social and Community Psychology</value>
+	  <value name="380106">Developmental Psychology and Ageing</value>
+	  <value name="380107">Health, Clinical and Counselling Psychology</value>
+	  <value name="380108">Industrial and Organisational Psychology</value>
+	  <value name="380109">Psychological Methodology, Design and Analysis</value>
+	  <value name="380199">Psychology not elsewhere classified</value>
+	</category>
+	<category name="380200" label="LINGUISTICS">
+	  <value name="380201">Applied Linguistics and Educational Linguistics</value>
+	  <value name="380202">Computational Linguistics</value>
+	  <value name="380203">Discourse and Pragmatics</value>
+	  <value name="380204">Laboratory Phonetics and Speech Science</value>
+	  <value name="380205">Language in Culture and Society (Sociolinguistics)</value>
+	  <value name="380206">Language in Time and Space (incl. Historical Linguistics, Dialectology)</value>
+	  <value name="380207">Linguistic Structures (incl. Grammar, Phonology, Lexicon, Semantics)</value>
+	  <value name="380208">Lexicography</value>
+	  <value name="380299">Linguistics not elsewhere classified</value>
+	</category>
+	<category name="380300" label="COGNITIVE SCIENCE">
+	  <value name="380301">Philosophy of Cognition</value>
+	  <value name="380302">Linguistic Processes (incl. Speech Production and Comprehension)</value>
+	  <value name="380303">Computer Perception, Memory and Attention</value>
+	  <value name="380304">Neurocognitive Patterns and Neural Networks</value>
+	  <value name="380305">Knowledge Representation and Machine Learning</value>
+	  <value name="380306">Planning and Problem Solving</value>
+	  <value name="380399">Cognitive Science not elsewhere classified</value>
+	</category>
+	<category name="389900" label="OTHER BEHAVIOURAL AND COGNITIVE SCIENCES">
+	  <value name="389999">Other Behavioural and Cognitive Sciences</value>
+	</category>
+  </category>
+  <category name="390000" label="LAW, JUSTICE AND LAW ENFORCEMENT">
+	<category name="390100" label="LAW">
+	  <value name="390101">Administrative Law</value>
+	  <value name="390102">Comparative Law</value>
+	  <value name="390103">Constitutionalism and Constitutional Law</value>
+	  <value name="390104">Commercial and Contract Law</value>
+	  <value name="390105">Corporations and Associations Law</value>
+	  <value name="390106">Criminal Law</value>
+	  <value name="390107">Environmental and Natural Resources Law</value>
+	  <value name="390108">Family Law</value>
+	  <value name="390109">Civil Law</value>
+	  <value name="390110">Indigenous Law</value>
+	  <value name="390111">International Law</value>
+	  <value name="390112">Law and Literature</value>
+	  <value name="390113">Legal History</value>
+	  <value name="390114">Intellectual Property</value>
+	  <value name="390115">Property Law and Conveyancing (excl. Intellectual Property)</value>
+	  <value name="390116">Labour Law</value>
+	  <value name="390117">Tort Law</value>
+	  <value name="390118">Taxation Law</value>
+	  <value name="390119">Equity Law</value>
+	  <value name="390120">Trust Law</value>
+	  <value name="390199">Law not elsewhere classified</value>
+	</category>
+	<category name="390200" label="PROFESSIONAL DEVELOPMENT OF LAW PRACTITIONERS">
+	  <value name="390201">Legal Practice</value>
+	  <value name="390202">Adjudication</value>
+	  <value name="390203">Legal Education</value>
+	  <value name="390204">Professional Ethics</value>
+	  <value name="390299">Professional Development of Law Practitioners not elsewhere classified</value>
+	</category>
+	<category name="390300" label="JUSTICE AND LEGAL STUDIES">
+	  <value name="390301">Justice Systems and Administration</value>
+	  <value name="390302">Jurisprudence and Legal Theory</value>
+	  <value name="390303">Human Rights</value>
+	  <value name="390304">Counselling and Mediation Services</value>
+	  <value name="390305">Law and Society</value>
+	  <value name="390399">Justice and Legal Studies not elsewhere classified</value>
+	</category>
+	<category name="390400" label="LAW ENFORCEMENT">
+	  <value name="390401">Criminology</value>
+	  <value name="390402">Evidence and Procedure</value>
+	  <value name="390403">Police Administration, Procedures and Practice</value>
+	  <value name="390404">Detection and Prevention of Crime; Security Services</value>
+	  <value name="390405">Correctional Theory and Services; Penology</value>
+	  <value name="390499">Law Enforcement not elsewhere classified</value>
+	</category>
+	<category name="399900" label="OTHER LAW, JUSTICE AND LAW ENFORCEMENT">
+	  <value name="399901">History and Philosophy of Law and Justice</value>
+	  <value name="399999">Law, Justice and Law Enforcement not elsewhere classified</value>
+	</category>
+  </category>
+  <category name="400000" label="JOURNALISM, LIBRARIANSHIP AND CURATORIAL STUDIES">
+	<category name="400100" label="JOURNALISM, COMMUNICATION AND MEDIA">
+	  <value name="400101">Journalism</value>
+	  <value name="400102">Technical Writing</value>
+	  <value name="400103">Professional Creative Writing</value>
+	  <value name="400104">Communication and Media Studies</value>
+	  <value name="400199">Journalism, Communication and Media not elsewhere classified</value>
+	</category>
+	<category name="400200" label="LIBRARIANSHIP">
+	  <value name="400201">Librarianship</value>
+	</category>
+	<category name="400300" label="CURATORIAL STUDIES">
+	  <value name="400301">Museum Studies</value>
+	  <value name="400302">Archival Studies</value>
+	  <value name="400303">Materials Conservation</value>
+	  <value name="400399">Curatorial Studies not elsewhere classified</value>
+	</category>
+	<category name="409900" label="OTHER JOURNALISM, LIBRARIANSHIP AND CURATORIAL STUDIES">
+	  <value name="409999">Other Journalism, Librarianship and Curatorial Studies</value>
+	</category>
+  </category>
+  <category name="410000" label="THE ARTS">
+	<category name="410100" label="PERFORMING ARTS">
+	  <value name="410101">Music</value>
+	  <value name="410102">Drama, Theatre and Performance Studies</value>
+	  <value name="410103">Dance</value>
+	  <value name="410104">Indigenous Performing Arts</value>
+	  <value name="410199">Performing Arts not elsewhere classified</value>
+	</category>
+	<category name="410200" label="VISUAL ARTS AND CRAFTS">
+	  <value name="410201">Graphic Arts</value>
+	  <value name="410202">Fine Arts (incl. Sculpture and Painting)</value>
+	  <value name="410203">Photography</value>
+	  <value name="410204">Crafts</value>
+	  <value name="410299">Visual Arts and Crafts not elsewhere classified</value>
+	</category>
+	<category name="410300" label="CINEMA, ELECTRONIC ARTS AND MULTIMEDIA">
+	  <value name="410301">Film and Video</value>
+	  <value name="410302">Cinema Studies</value>
+	  <value name="410303">Multimedia</value>
+	  <value name="410304">Other Cinema and Electronic Arts</value>
+	</category>
+	<category name="410400" label="DESIGN STUDIES">
+	  <value name="410401">Design Theory</value>
+	  <value name="410402">Design Innovation</value>
+	  <value name="410403">Design Studio Practice</value>
+	  <value name="410404">Design Management and Professional Practice</value>
+	  <value name="410405">Design History and Cultural Theory</value>
+	  <value name="410499">Design Studies not elsewhere classified</value>
+	</category>
+	<category name="419900" label="OTHER ARTS">
+	  <value name="419901">Art History and Appreciation</value>
+	  <value name="419999">The Arts not elsewhere classified</value>
+	</category>
+  </category>
+  <category name="420000" label="LANGUAGE AND CULTURE">
+   <category name="420100" label="LANGUAGE STUDIES">
+	  <value name="420101">English</value>
+	  <value name="420102">English as a Second Language</value>
+	  <value name="420103">Aboriginal Languages</value>
+	  <value name="420104">Latin</value>
+	  <value name="420105">Greek</value>
+	  <value name="420106">French</value>
+	  <value name="420107">German</value>
+	  <value name="420108">Italian</value>
+	  <value name="420109">Spanish</value>
+	  <value name="420110">Russian</value>
+	  <value name="420111">Other European Languages</value>
+	  <value name="420112">Chinese Languages</value>
+	  <value name="420113">Japanese</value>
+	  <value name="420114">Indonesian Languages</value>
+	  <value name="420115">Malaysian Languages</value>
+	  <value name="420116">Indian Languages</value>
+	  <value name="420117">Korean</value>
+	  <value name="420118">Vietnamese Languages</value>
+	  <value name="420119">Thai Languages</value>
+	  <value name="420120">Other Asian Languages</value>
+	  <value name="420121">Comparative Language Studies</value>
+	  <value name="420122">Oracy and Oral Traditions</value>
+	  <value name="420199">Language Studies not elsewhere classified</value>
+	</category>
+	<category name="420200" label="LITERATURE STUDIES">
+	  <value name="420201">British and Irish</value>
+	  <value name="420202">Australian and New Zealand</value>
+	  <value name="420203">North American</value>
+	  <value name="420204">South American</value>
+	  <value name="420205">Latin and Classical Greek</value>
+	  <value name="420206">French</value>
+	  <value name="420207">German</value>
+	  <value name="420208">Italian</value>
+	  <value name="420209">Russian</value>
+	  <value name="420210">Other European</value>
+	  <value name="420211">Chinese</value>
+	  <value name="420212">Japanese</value>
+	  <value name="420213">Indonesian</value>
+	  <value name="420214">Indian</value>
+	  <value name="420215">Other Asian</value>
+	  <value name="420216">Comparative Literature Studies</value>
+	  <value name="420217">Textual Transmission and the Material Record</value>
+	  <value name="420218">Literary Theory</value>
+	  <value name="420219">Stylistics</value>
+	  <value name="420220">Folklore, Myth and Mythologies</value>
+	  <value name="420299">Literature Studies not elsewhere classified</value>
+	</category>
+	<category name="420300" label="CULTURAL STUDIES">
+	  <value name="420301">Cultural Policy Studies</value>
+	  <value name="420302">Cultural Theory</value>
+	  <value name="420303">Culture, Gender, Sexuality</value>
+	  <value name="420304">Screen and Media Culture</value>
+	  <value name="420305">Aboriginal Cultural Studies</value>
+	  <value name="420306">Postcolonial and Global Cultural Studies</value>
+	  <value name="420307">Consumption and Everyday Life</value>
+	  <value name="420308">Multicultural, Intercultural and Cross-cultural Studies</value>
+	  <value name="420399">Cultural Studies not elsewhere classified</value>
+	</category>
+	<category name="429900" label="OTHER LANGUAGE AND CULTURE">
+	  <value name="429999">Other Language and Culture</value>
+	</category>
+  </category>
+  <category name="430000" label="HISTORY AND ARCHAEOLOGY">
+	<category name="430100" label="HISTORICAL STUDIES">
+	  <value name="430101">History: Australian</value>
+	  <value name="430102">History: Asian</value>
+	  <value name="430103">History: Pacific</value>
+	  <value name="430104">History: North American</value>
+	  <value name="430105">History: Latin American</value>
+	  <value name="430106">History: African</value>
+	  <value name="430107">History: British</value>
+	  <value name="430108">History: European</value>
+	  <value name="430109">History: Middle Eastern</value>
+	  <value name="430110">History: Classical Greek and Roman</value>
+	  <value name="430111">History: Other</value>
+	  <value name="430112">Biography</value>
+	  <value name="430199">Historical Studies not elsewhere classified</value>
+	</category>
+  	<category name="430200" label="ARCHAEOLOGY AND PREHISTORY">
+	  <value name="430201">Archaeology of Hunter-Gatherer Societies (incl. Pleistocene Archaeology)</value>
+	  <value name="430202">Archaeology of Agricultural and Pastoral Societies</value>
+	  <value name="430203">Archaeology of Complex Societies: Europe, the Mediterranean and the Levant</value>
+	  <value name="430204">Archaeology of Complex Societies: Asia, Africa, Oceania and the Americas</value>
+	  <value name="430205">Historical Archaeology (incl. Industrial Archaeology)</value>
+	  <value name="430206">Maritime Archaeology</value>
+	  <value name="430207">Archaeological Science</value>
+	  <value name="430299">Archaeology and Prehistory not elsewhere classified</value>
+	</category>
+	<category name="439900" label="OTHER HISTORY AND ARCHAEOLOGY">
+	  <value name="439999">Other History and Archaeology</value>
+	</category>
+  </category>
+  <category name="440000" label="PHILOSOPHY AND RELIGION">
+	<category name="440100" label="PHILOSOPHY">
+	  <value name="440101">Aesthetics</value>
+	  <value name="440102">Epistemology</value>
+	  <value name="440103">Ethical Theory</value>
+	  <value name="440104">Applied Ethics (incl. Bioethics and Environmental Ethics)</value>
+	  <value name="440105">History of Philosophy and History of Ideas</value>
+	  <value name="440106">Logic</value>
+	  <value name="440107">Metaphysics</value>
+	  <value name="440108">Philosophy of Language</value>
+	  <value name="440109">Philosophy of Mind (excl. Cognition)</value>
+	  <value name="440110">Social Philosophy</value>
+	  <value name="440111">Phenomenology</value>
+	  <value name="440112">Hermeneutic Theory</value>
+	  <value name="440113">Comparative Philosophy</value>
+	  <value name="440114">Philosophy of Action</value>
+	  <value name="440115">Philosophy of Specific Cultures (e.g. Ancient Greek, Chinese)</value>
+	  <value name="440199">Philosophy not elsewhere classified</value>
+	</category>
+	<category name="440200" label="RELIGION AND RELIGIOUS TRADITIONS">
+	  <value name="440201">Hindu Studies</value>
+	  <value name="440202">Buddhist Studies</value>
+	  <value name="440203">Jewish Studies</value>
+	  <value name="440204">Christian Theology (incl. Biblical Studies and Church History)</value>
+	  <value name="440205">Islamic Studies</value>
+	  <value name="440206">Studies in Other Religious Traditions</value>
+	  <value name="440207">Religion and Society</value>
+	  <value name="440208">Psychology of Religion</value>
+	  <value name="440209">Philosophy of Religion</value>
+	  <value name="440299">Religion and Religious Traditions not elsewhere classified</value>
+	</category>
+	<category name="449900" label="OTHER PHILOSOPHY AND RELIGION">
+	  <value name="449999">Other Philosophy and Religion</value>
+	</category>
+  </category>
+</enum-type>

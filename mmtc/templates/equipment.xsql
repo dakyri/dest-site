@@ -1,0 +1,146 @@
+<?xml version = '1.0'?>
+<!DOCTYPE sqlschema [
+]>
+<sqlschema database="dest">
+ <table  name="equipment"
+ 			order="create_timestamp"
+ 			validation-displayed="false"
+ 			validation-enforced="false"
+ 			label="Equipment"
+ 			completionScript="common/jx_complete.js">
+  <documentation><b>Add, Remove or Edit an entry in the MMTC equipment list.<br/></b>
+  	   	 <font size="-2">The frontend of the site provides all of the necessary formatting and wierd bits required for a listing.
+  	 For special effects and emphasis, the strong of heart will find most HTML
+    formatting tags and entities are permitted and are sensible in most text fields below (especially in the paragraph text),
+    in particular:
+    <table cellspacing="0" cellpadding="0"><tr><td><font size="-2"><ul>
+    <li>&amp;lt;P&amp;gt; for a paragraph</li>
+    <li>&amp;lt;BR&amp;gt; to start a new line</li>
+    <li>&amp;lt;A&amp;gt;..&amp;lt;/A&amp;gt; for a hyperlink</li>
+    </ul></font></td><td><font size="-2"><ul>
+    <li>&amp;lt;B&amp;gt;..&amp;lt;/B&amp;gt; for bold text</li>
+    <li>&amp;lt;I&amp;gt;..&amp;lt;/I&amp;gt; for italic text</li>
+    <li>&amp;lt;FONT&amp;gt;..&amp;lt;/FONT&amp;gt; for a change of font size, face, or color</li>
+    </ul></font></td><td><font size="-2"><ul>
+    <li>&amp;amp;lt; is a single &amp;lt;</li>
+    <li>&amp;amp;gt; is a single &amp;gt;</li>
+    <li>&amp;amp;amp; is a single &amp;amp;</li>
+    </ul></font></td></tr></table></font>
+  </documentation>
+  <enum-type name="image-align-type">
+  	 <value name="center">Center</value>
+  	 <value name="left">Left</value>
+  	 <value name="right">Right</value>
+  	 <value name="bottom">Bottom</value>
+  	 <value name="middle">Middle</value>
+  	 <value name="top">Top</value>
+  </enum-type>
+  <enum-type name="equipment-type">
+  	 <value name="lithography">Lithography</value>
+  	 <value name="deposition">Deposition</value>
+  	 <value name="fabrication">Other Fabrication</value>
+  	 <value name="analytical">Analytical</value>
+  	 <value name="other">Other</value>
+  </enum-type>
+  <list-type name="trained-user-list" size="10" extend-by="5">
+  	<field name="trained_stnumber" type="tinytext" width="10" maxlength="30"
+  			onChange="value=value.toLowerCase();"
+   		>Staff/Student&lt;br&gt;Number</field>
+  	<field name="trained_surname" type="tinytext" width="40" maxlength="60"
+ 			completionClass="jxComplete"
+ 			matchUrlPath="completion.php"
+  			matchCompare="stnumber,firstname,surname"
+  			matchComplete="trained_stnumber=stnumber,trained_email=email,trained_firstname=firstname,trained_surname=surname"
+  			matchLabel="$row->title.' '.$row->firstname.' '.$row->surname"
+  			matchUrlMatchField="match_field"
+  			matchUrlFetchField="fetch_field"
+  			matchUrlValueField="match_text"
+  			matchQueryBase="'table=people&amp;fetch_field[]=firstname&amp;fetch_field[]=surname&amp;fetch_field[]=email&amp;where_extra='.urlencode('kind!=\'admin\'')"
+  		>Surname<documentation>Type a few letters to match first name, surname,&lt;br&gt;or staff number of 
+  		trained users.</documentation></field>
+  	<field name="trained_firstname" type="tinytext" width="20" maxlength="60">Firstname</field>
+  	<field name="trained_email" type="tinytext" width="40" maxlength="250">Email</field>
+  </list-type>
+  <list-type name="description-list" size="2">
+  	<field name="paragraph" type="text" width="45" height="4">Text</field>
+  	<field name="image" type="image" width="30" maxlength="255"
+  		base="'equ'.($schema_edit_scripting?$row->code:($schema_edit_updating?$code:($schema_edit_inserting?$schema_edit_auto_increment:0)))"
+  		fixed="false">Image</field>
+  	<field name="image_align" type="image-align-type">Alignment</field>
+  	<field name="image_caption" type="tinytext" width="20" maxlength="255">Image Caption</field>
+  </list-type>
+  <list-type name="document-list" size="3">
+  	<field name="document" type="upload" width="50" maxlength="255"
+  		base="'equ'.($schema_edit_scripting?$row->code:($schema_edit_updating?$code:($schema_edit_inserting?$schema_edit_auto_increment:0)))"
+  		fixed="false">Document<documentation>Equipment manuals, OHS guides</documentation></field>
+  	<field name="document_caption" type="tinytext" width="20" maxlength="255">Name of the document/guide</field>
+  </list-type>
+  <field name="code" type="integer" hidden="true" qualifiers="not null auto_increment primary key" key="primary" ></field>
+  <field name="name" type="tinytext" width="40" maxlength="200" key="secondary">Name<documentation>The commonly used name for the device</documentation></field>
+  <field name="full_name" type="tinytext" width="40" maxlength="200" key="secondary">Full Name<documentation>The full manufacturer's name for the device</documentation></field>
+  <field name="manufacturer" type="tinytext" width="40" maxlength="200">Name of the manufacturer</field>
+  <field name="location_code" type="integer" value="-1" hidden="true"></field>
+  <field name="location" type="tinytext" value="" hidden="false" width="40" maxlength="200"
+ 			completionClass="jxComplete"
+ 			matchUrlPath="completion.php"
+  			matchCompare="name,location"
+  			matchComplete="location=name,location_code=code"
+  			matchLabel="' '"
+  			matchUrlMatchField="match_field"
+  			matchUrlFetchField="fetch_field"
+  			matchUrlValueField="match_text"
+  			matchQueryBase="'table=facilities'"
+  		>Location</field>
+  <field name="type" type="equipment-type" key="secondary">Equipment Class<documentation>The general class of this piece of gear</documentation></field>
+  <field name="supervisor" type="tinytext" width="10" maxlength="30" key="secondary"
+  			onChange="value=value.toLowerCase();"
+ 			completionClass="jxComplete"
+ 			matchUrlPath="completion.php"
+  			matchCompare="stnumber,firstname,surname"
+  			matchComplete="supervisor=stnumber,sup_email=email,sup_firstname=firstname,sup_surname=surname"
+  			matchLabel="$row->title.' '.$row->firstname.' '.$row->surname"
+  			matchUrlMatchField="match_field"
+  			matchUrlFetchField="fetch_field"
+  			matchUrlValueField="match_text"
+  			matchQueryBase="'table=people&amp;fetch_field[]=firstname&amp;fetch_field[]=surname&amp;fetch_field[]=email&amp;where_extra='.urlencode('kind!=\'admin\'')"
+  		>Equipment Supervisor Staff Number<documentation>This is
+  		the person responsible for this particular piece of gear.
+  		To initiate a match from the database, type a few letters
+  		from the staff number, surname, or first name of the staff member. The supervisor must have a
+  		login account to the RPC system.</documentation></field>
+  <field name="sup_firstname" type="tinytext" width="30" maxlength="200"
+  		expression="($schemaEditAction=='Insert item')?$login_user_row->firstname:NULL"
+  		>Supervisor Firstname<documentation>(Optional)</documentation></field>
+  <field name="sup_surname" type="tinytext" width="30" maxlength="200"
+  		expression="($schemaEditAction=='Insert item')?$login_user_row->surname:NULL"
+  		>Supervisor Surname<documentation>(Optional)</documentation></field>
+  <field name="sup_email" type="tinytext" width="40" maxlength="200"
+   	expression="($schemaEditAction=='Insert item')?$login_user_row->email:NULL"
+		>Supervisor Email<documentation></documentation></field>
+  <field name="description" type="description-list">Description<documentation>Text blocks are arranged in
+  		paragraphs on a descriptive page for the item, and associated images are placed after (or to the
+  		side of) the paragraph. Either text or image may be left empty. Space for more paragraphs 
+  		or images will be added automatically if you need more.</documentation></field>
+  <field name="trained_users" type="trained-user-list">Trained Users<documentation>This is the
+  	list of users who have received training on this particular piece of equipment. They are the regular
+  	users who will be able to make online bookings for this item.</documentation></field>
+  <field name="documentation" type="document-list">Documentation</field>
+  <field name="needs_training" type="bool">Requires Training<documentation>Indicates that to book
+   or use this item you need to undergo official training and/or approval to access.</documentation></field>
+  <field name="needs_booking" type="bool">Requires Booking<documentation>Indicates that this
+  	item needs to be booked in advance to be used.</documentation></field>
+  <field name="booking_slot_size" type="time" value="01:00">Booking Slot Size (hh:mm)<documentation>Standard
+  	booking slot length.</documentation></field>
+  <field name="booking_avail_from" type="time" value="09:00">Initial Booking Availability Time (hh:mm)<documentation></documentation></field>
+  <field name="booking_avail_to" type="time" value="17:00">Final Booking Availability Time (hh:mm)<documentation></documentation></field>
+  <field name="booking_grid_size" type="time" value="1:00" hidden="true">Booking grid size (hh:mm)<documentation>This is the gap between booking times.
+  	This should be equal to or smaller than smaller than the booking slot size.</documentation></field>
+  <field name="maximum_concurrent_bookings" type="int" value="4" hidden="true">Maximum Bookings<documentation>The maximum number of slots that
+  	a regular user can have booked on this item at any time. This restriction does not apply for administrative users. A value of 0 corresponds to no such
+  	restriction being in place.</documentation></field>
+  <field name="is_active" type="bool">Is Currently Available<documentation>Indicates that this
+  	item is available for open usage (ie it's not lent, bent, or broken).</documentation></field>
+  <field name="edit_timestamp" type="datetime" hidden="true" fixed="true" expression="date('YmdHis')"></field>
+  <field name="create_timestamp" type="datetime" hidden="true" fixed="true" expression="($schemaEditAction=='Insert item')?date('YmdHis'):NULL"></field>
+ </table>
+</sqlschema>

@@ -1,0 +1,15 @@
+  <enum-type name="month-type" fixed="true">
+  	 <value name="none"></value>
+  	 <value name="jan">January</value>
+  	 <value name="feb">February</value>
+  	 <value name="mar">March</value>
+  	 <value name="apr">April</value>
+  	 <value name="may">May</value>
+  	 <value name="jun">June</value>
+  	 <value name="jul">July</value>
+  	 <value name="aug">August</value>
+  	 <value name="sep">September</value>
+  	 <value name="oct">October</value>
+  	 <value name="nov">November</value>
+  	 <value name="dec">December</value>
+  </enum-type>

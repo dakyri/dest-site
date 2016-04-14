@@ -1,0 +1,68 @@
+code:1
+name:Ph.D
+type:postgraduate
+prerequisites:Masters degree or Strong undergraduate degree
+contact:
+paragraph:A%20few%20words%20about%20Phd%20degrees%20centred%20on%20the%20MMTC&Some%20more%20stuff&
+image:nonlinear3.jpg&&
+image_align:right&center&center
+image_caption:Non%20linear%20photonic%20crystal&&
+points:&&&&&
+document:&&
+document_caption:&&
+page_order:0
+unlisted:0
+edit_timestamp:2006-08-27 17:50:08
+create_timestamp:2006-08-27 16:48:12
+
+code:2
+name:ChipSkills
+type:coursework
+prerequisites:Undergraduate degree
+contact:e21496
+paragraph:A%20few%20words%20about%20chipskills&&
+image:b2.gif&&
+image_align:right&center&center
+image_caption:&&
+points:Microelectronic%20Fabrication&Design&&&&
+document:&&
+document_caption:&&
+page_order:0
+unlisted:0
+edit_timestamp:2006-08-27 17:30:07
+create_timestamp:2006-08-27 16:49:37
+
+code:3
+name:Masters in MEMS
+type:coursework
+prerequisites:Undergraduate degree
+contact:e21496
+paragraph:Some%20info%20about%20the%20mems%20masters&&
+image:Bug_1b.jpg&&
+image_align:right&center&center
+image_caption:The%20legendary%20Sandia%20Mite&&
+points:Fabrication%20of%20MEMS%20devices&CAD%20tools%20for%20MEMS&Materials%20for%20MEMS&Integrated%20desaign&Sensors%20and%20Actuators&
+document:&&
+document_caption:&&
+page_order:0
+unlisted:0
+edit_timestamp:2006-08-27 17:30:47
+create_timestamp:2006-08-27 16:51:43
+
+code:4
+name:Masters
+type:postgraduate
+prerequisites:Undergraduate degree
+contact:
+paragraph:A%20few%20words%20about%20masters%20by%20research%20centred%20on%20the%20MMTC&Some%20more%20stuff&
+image:fluid1.jpeg&&
+image_align:right&center&center
+image_caption:Non%20linear%20photonic%20crystal&&
+points:&&&&&
+document:&&
+document_caption:&&
+page_order:0
+unlisted:0
+edit_timestamp:2006-08-27 17:53:07
+create_timestamp:2006-08-27 17:49:15
+

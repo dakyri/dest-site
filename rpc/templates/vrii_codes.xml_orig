@@ -1,0 +1,15 @@
+  <enum-type name="vrii-type">
+  	 <value name="unaligned">Not Aligned</value>
+  	 <value name="biotechnology">Biotechnology</value>
+  	 <value name="sustainability">Global Sustainability</value>
+  	 <value name="globalisation">Globalisation</value>
+  	 <value name="information">ICT Interactive Information</value>
+  	 <documentation>VRII Definitions
+	  <dl>
+	   <dt>Biotechnology</dt><dd>may include but not restricted to: human medical science; complementary medicine; plant science etc.</dd>
+	   <dt>Global Sustainability</dt><dd>may include but not be restricted to: environmental/ecological sustainability (including regional and rural development); human/enterprise organisation (including knowledge management and entrepreneurship/innovation), etc.</dd>
+	   <dt>Globalisation</dt><dd>may include but not be restricted to: transnationalism; cultural diversity, etc</dd>
+	   <dt>ICT Interactive Information</dt><dd>may include but not be restricted to: spatial and sonological architecture (including geospatial); visualization; design (including digital and software); smart manufacturing/materials (including sensing, nanotechnology, aerospace).</dd>
+	  </dl>
+	 </documentation>
+  </enum-type>

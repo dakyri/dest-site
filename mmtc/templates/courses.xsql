@@ -1,0 +1,88 @@
+<?xml version = '1.0'?>
+<!DOCTYPE sqlschema [
+]>
+<sqlschema database="dest">
+ <table  name="courses"
+ 			order="create_timestamp"
+ 			validation-displayed="false"
+ 			validation-enforced="false"
+ 			label="Courses"
+ 			completionScript="common/jx_complete.js">
+  <documentation><b>Add, Remove or Edit an entry in the MMTC course list.<br/></b>
+  	   	 <font size="-2">The frontend of the site provides all of the necessary formatting and wierd bits required for a listing.
+  	 For special effects and emphasis, the strong of heart will find most HTML
+    formatting tags and entities are permitted and are sensible in most text fields below (especially in the paragraph text),
+    in particular:
+    <table cellspacing="0" cellpadding="0"><tr><td><font size="-2"><ul>
+    <li>&amp;lt;P&amp;gt; for a paragraph</li>
+    <li>&amp;lt;BR&amp;gt; to start a new line</li>
+    <li>&amp;lt;A&amp;gt;..&amp;lt;/A&amp;gt; for a hyperlink</li>
+    </ul></font></td><td><font size="-2"><ul>
+    <li>&amp;lt;B&amp;gt;..&amp;lt;/B&amp;gt; for bold text</li>
+    <li>&amp;lt;I&amp;gt;..&amp;lt;/I&amp;gt; for italic text</li>
+    <li>&amp;lt;FONT&amp;gt;..&amp;lt;/FONT&amp;gt; for a change of font size, face, or color</li>
+    </ul></font></td><td><font size="-2"><ul>
+    <li>&amp;amp;lt; is a single &amp;lt;</li>
+    <li>&amp;amp;gt; is a single &amp;gt;</li>
+    <li>&amp;amp;amp; is a single &amp;amp;</li>
+    </ul></font></td></tr></table></font>
+  </documentation>
+  <enum-type name="image-align-type">
+  	 <value name="center">Center</value>
+  	 <value name="left">Left</value>
+  	 <value name="right">Right</value>
+  	 <value name="bottom">Bottom</value>
+  	 <value name="middle">Middle</value>
+  	 <value name="top">Top</value>
+  </enum-type>
+  <enum-type name="course-type">
+  	 <value name="postgraduate">Postgraduate</value>
+  	 <value name="coursework">Postgraduate Coursework</value>
+  	 <value name="undergraduate">Undergraduate</value>
+  	 <value name="other">Other</value>
+  </enum-type>
+  <list-type name="description-list" size="2">
+  	<field name="paragraph" type="text" width="45" height="4">Text</field>
+  	<field name="image" type="image" width="30" maxlength="255"
+  		base="'crs'.($schema_edit_scripting?$row->code:($schema_edit_updating?$code:($schema_edit_inserting?$schema_edit_auto_increment:0)))"
+  		fixed="false">Image</field>
+  	<field name="image_align" type="image-align-type">Alignment</field>
+  	<field name="image_caption" type="tinytext" width="20" maxlength="255">Image Caption</field>
+  </list-type>
+  <list-type name="point-list" size="5">
+  	<field name="points" type="text" width="45" height="1">Text</field>
+  </list-type>
+  <list-type name="document-list" size="3">
+  	<field name="document" type="upload" width="50" maxlength="255"
+  		base="'crs'.($schema_edit_scripting?$row->code:($schema_edit_updating?$code:($schema_edit_inserting?$schema_edit_auto_increment:0)))"
+  		fixed="false">Document<documentation>Course guides/promotional material</documentation></field>
+  	<field name="document_caption" type="tinytext" width="20" maxlength="255">Name of the document/guide</field>
+  </list-type>
+  <field name="code" type="integer" hidden="true" qualifiers="not null auto_increment primary key" key="primary" ></field>
+  <field name="name" type="tinytext" width="40" maxlength="200" key="secondary">Name<documentation>The commonly used name for the device</documentation></field>
+  <field name="type" type="course-type" key="secondary">Type of course<documentation></documentation></field>
+  <field name="prerequisites" type="tinytext" width="70" maxlength="200">Course Prequisites</field>
+  <field name="contact" type="tinytext" value="" hidden="false" width="40" maxlength="200"
+ 			completionClass="jxComplete"
+ 			matchUrlPath="completion.php"
+  			matchCompare="firstname,surname,stnumber"
+  			matchComplete="contact=stnumber"
+  			matchLabel="$row->title.' '.$row->firstname.' '.$row->surname"
+  			matchUrlMatchField="match_field"
+  			matchUrlFetchField="fetch_field"
+  			matchUrlValueField="match_text"
+  			matchQueryBase="'table=people&amp;fetch_field[]=title&amp;fetch_field[]=firstname&amp;fetch_field[]=surname&amp;where_extra='.urlencode('kind!=\'admin\'')"
+  		>Contact/Supervisor<documentation>E-number for the course supervisor/contact</documentation></field>
+  <field name="description" type="description-list">Description<documentation>Text blocks are arranged in
+  		paragraphs on a descriptive page for the course, and associated images are placed after (or to the
+  		side of) the paragraph. Either text or image may be left empty. Space for more paragraphs 
+  		or images will be added automatically if you need more.</documentation></field>
+  <field name="bulletpoints" type="point-list">Short Points<documentation>A collection of short bullet points placed after the first paragraph.</documentation></field>
+  <field name="documentation" type="document-list">Documents<documentation>Downloadable information for the course</documentation></field>
+  <field name="page_order" type="tinyint" width="3" maxlength="4" value="0" midval="0" minval="-127" maxval="127">Display Order<documentation>This controls how high in a page this listing is shown. The higher the priority, the closer to the top
+    of the page. This should be either blank, a number betweeen -127 and 127.</documentation></field>
+  <field name="unlisted" type="bool">Not Displayed<documentation>(Check this box to temporarily remove the listing from display, without losing any information)</documentation></field>
+  <field name="edit_timestamp" type="datetime" hidden="true" fixed="true" expression="date('YmdHis')"></field>
+  <field name="create_timestamp" type="datetime" hidden="true" fixed="true" expression="($schemaEditAction=='Insert item')?date('YmdHis'):NULL"></field>
+ </table>
+</sqlschema>

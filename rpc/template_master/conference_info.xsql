@@ -1,0 +1,43 @@
+<?xml version = '1.0'?>
+<!DOCTYPE sqlschema [
+	<!ENTITY month_codes SYSTEM "month_codes.xml">
+]>
+<sqlschema database="publications">
+   &month_codes;
+ <table  name="conference_info"
+ 			order="publication_year,conference_name,publisher"
+ 			label="Conference Info"
+ 			editorpagesize="20">
+  <enum-type name="conference-impact-type" extensible="($admin_edit)" label="impact type">
+  	<documentation>The impact types represent different sets of value weightings placed on each particular
+  	conference. The standard system of such values is the ISI impact factor. Other similar factors exist, though
+  	none so widely recognised. The value field for this type is used by the quanta tracking system, and
+  	should be unique.</documentation>
+  	 <value name="none"></value>
+  	 <value name="isi">ISI Impact Factor</value>
+  </enum-type>
+  <list-type name="conference-impact-list" size="4">
+  	<field name="impact_type" type="conference-impact-type">Type</field>
+  	<field name="impact_factor" type="float" minval="0.01" midval="1.0">Impact factor</field>
+  </list-type>
+  <field name="code" type="integer" hidden="true" qualifiers="not null auto_increment primary key" key="primary"></field>
+  <field name="conference_name" type="tinytext" width="70" maxlength="200" key="secondary">Conference name</field>
+  <field name="conference_date" type="tinytext" width="20" maxlength="30">Conference date</field>
+  <field name="conference_location" type="tinytext" width="30" maxlength="100" >Conference location</field>
+  <field name="publication_title" type="tinytext" width="80" maxlength="200" key="secondary">Conference publication title</field>
+  <field name="publisher" type="tinytext" width="30" maxlength="100" key="secondary">Publisher</field>
+  <field name="publication_place" type="tinytext" width="30" maxlength="100">Place of Publication</field>
+  <field name="publication_year" type="tinytext" value="2005" width="4" maxlength="4">Publication Year</field>
+  <field name="publication_month" type="month-type" value="none">Publication Month (if relevant)</field>
+  <field name="editor" type="tinytext" width="60" maxlength="200" >Editor(s)</field>
+  <field name="isbn" type="tinytext" width="10" maxlength="30" key="secondary">ISBN</field>
+  <field name="impact" type="conference-impact-list">Impact factor of journal.<documentation>The standard impact factor
+  	is that collated by ISI. Other values (including internally specified metrics) may also be added here.
+  	The tag value will be used to apply a metric for a conference when tracking research quanta. Conferences are not typically tracked by ISI,
+  	and the system will typically (and generously) use an impact factor of 1.00 if you don't give a value here.</documentation></field>
+  <field name="web" type="tinytext" width="70" maxlength="140">Web Address For Conference/Publication (If applicable)</field>
+  <field name="description" type="text" width="70" height="6">Description of Conference</field>
+  <field name="create_timestamp" type="datetime" hidden="true" fixed="true" expression="($edAction=='Insert item')?date('YmdHis'):NULL"></field>
+  <field name="edit_timestamp" type="datetime" hidden="true" fixed="true" expression="date('YmdHis')"></field>
+ </table>
+</sqlschema>

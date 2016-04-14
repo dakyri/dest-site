@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="en-US">
+<para>Book Details</para>
+<informaltable frame="all">
+<tgroup cols="3.3333333333333335"><tbody>
+<row>
+<entry>
+<para>Book Title</para>
+</entry>
+<entry namest="c2" nameend="c4">
+<para>          </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Publisher</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>Place of Publication</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>ISBN</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>Keywords</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Author Details – please list in same order on publication</para>
+<informaltable frame="all">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/><tbody>
+<row>
+<entry>
+<para>Order</para>
+</entry>
+<entry>
+<para>Staff/ Student ID</para>
+</entry>
+<entry>
+<para>Surname</para>
+</entry>
+<entry>
+<para>First Name</para>
+</entry>
+<entry>
+<para>Title</para>
+</entry>
+<entry>
+<para>Gender</para>
+</entry>
+<entry>
+<para>Type (student, staff, external, adjunct)</para>
+</entry>
+<entry>
+<para>School name or External Org name</para>
+</entry>
+<entry>
+<para>School code</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>e00000</para>
+</entry>
+<entry>
+<para>Brown</para>
+</entry>
+<entry>
+<para>John</para>
+</entry>
+<entry>
+<para>Dr</para>
+</entry>
+<entry>
+<para>M</para>
+</entry>
+<entry>
+<para>Staff</para>
+</entry>
+<entry>
+<para>Research &amp; Innovation</para>
+</entry>
+<entry>
+<para>40020100</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>  </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>  </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>  </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>  </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>  </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>  </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>RFCD Codes (please see http://www.rmit.edu.au/browse;ID=sysybiltujyv) if more than 1 RFCD please ensure the % totals 100</para>
+<informaltable frame="all">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/><tbody>
+<row>
+<entry>
+<para>RFCD Code</para>
+</entry>
+<entry>
+<para>240101</para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+<entry>
+<para>          </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>% split</para>
+</entry>
+<entry>
+<para>100%</para>
+</entry>
+<entry>
+<para>        </para>
+</entry>
+<entry>
+<para>        </para>
+</entry>
+<entry>
+<para>        </para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Virtual Research Innovation Institution (VRII) – choose one*</para>
+<informaltable frame="all">
+<tgroup cols="5">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/><tbody>
+<row>
+<entry>
+<para> Biotechnology</para>
+</entry>
+<entry>
+<para>Global Sustainability</para>
+</entry>
+<entry>
+<para> Globalisation</para>
+</entry>
+<entry>
+<para>ICT Interactive Information</para>
+</entry>
+<entry>
+<para> Not aligned</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>**VRII Definitions</para>
+<para>Biotechnology - may include but not restricted to: human medical science; complementary medicine; plant science etc.</para>
+<para>Global Sustainability - may include but not be restricted to: environmental/ecological sustainability (including regional and rural development); human/enterprise organisation (including knowledge management and entrepreneurship/innovation), etc.</para>
+<para>Globalisation - may include but not be restricted to: transnationalism; cultural diversity, etc</para>
+<para>ICT Interactive Information - may include but not be restricted to: spatial and sonological architecture (including geospatial); visualization; design (including digital and software); smart manufacturing/materials (including sensing, nanotechnology, aerospace).</para>
+<para/>
+<para>Author Verification</para>
+<para>I, as the first named RMIT author of this book, confirm the following:</para>
+<orderedlist>
+<listitem>
+<para>This publication meets the DEST definition of research.</para>
+</listitem>
+<listitem>
+<para>This publication was published in 2005.</para>
+</listitem>
+<listitem>
+<para>The research for this publication was undertaken in my capacity as a staff member or student of RMIT University.</para>
+</listitem>
+<listitem>
+<para>This publication is a major work of scholarship.</para>
+</listitem>
+<listitem>
+<para>This publication was written entirely by a single author, or joint by authors who share responsibility for the whole book.</para>
+</listitem>
+<listitem>
+<para>This is the first time this publication has been submitted for inclusion in the DEST Research Publications Collection and that it is mainly unpublished material, making a substantial contribution to knowledge.</para>
+</listitem>
+<listitem>
+<para>This publication was published by a commercial publisher.</para>
+</listitem>
+<listitem>
+<para>This publication is offered for sale:</para>
+</listitem>
+</orderedlist>
+<para>a)for hard copies – bound;</para>
+<para>b)for CD-ROMs – packaged; or</para>
+<para>c)for e-books – on a subscription or fee basis).</para>
+<para>9.This publication has an ISBN (International Standard Book Number)</para>
+<para/>
+<para>Signature of first named RMIT AuthorDate:</para>
+<para>VERIFICATION MATERIAL CHECKLIST </para>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>The following is required to be attached:</para>
+</entry>
+<entry>
+<para>School Check</para>
+</entry>
+<entry>
+<para>Portfolio Check</para>
+</entry>
+</row>
+<row>
+<entry>
+<orderedlist>
+<listitem>
+<para>Copy of one book chapter and School sighting of entire publication</para>
+</listitem>
+</orderedlist>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<orderedlist>
+<listitem>
+<para>Copy of book cover</para>
+</listitem>
+</orderedlist>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<orderedlist>
+<listitem>
+<para>Copy of introduction / preface</para>
+</listitem>
+</orderedlist>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<orderedlist>
+<listitem>
+<para>Copy of table of contents</para>
+</listitem>
+</orderedlist>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<orderedlist>
+<listitem>
+<para>Copies of any pages showing the following (if information not already included in above:</para>
+</listitem>
+</orderedlist>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>(a)name of book</para>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>(b)editor(s)</para>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>(c)publisher</para>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>(d)ISBN</para>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>(e)Year published (or copyright year)</para>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>(f)By-line or footnote or statement in publication indicating research undertaken in author’s capacity as a staff member or student of RMIT</para>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<orderedlist>
+<listitem>
+<para>Commercial publisher (inclusion on DEST’s Register of Commercial Publishers or if not on list evidence that the organisation meets the DEST definition of commercial publisher.</para>
+</listitem>
+</orderedlist>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para/>
+<para>DATA ENTRY</para>
+<para/>
+<informaltable frame="all">
+<tgroup cols="4"><tbody>
+<row>
+<entry>
+<para>Data Entry by:</para>
+<para>(please print</para>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para>Date:</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="1.5"><tbody>
+<row>
+<entry namest="c1" nameend="c2">
+<para/>
+<para>VERIFICATION</para>
+<para>All information as listed above is complete and attached to this form</para>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para/>
+<para>SCHOOL TO VERIFY:</para>
+<para/>
+<para/>
+<para/>
+<para/>
+<para>Signed on behalf of School</para>
+</entry>
+<entry>
+<para/>
+<para>PORTFOLIO TO VERIFY:</para>
+<para/>
+<para/>
+<para/>
+<para/>
+<para>Signed on behalf of Portfolio</para>
+<para/>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+</article>

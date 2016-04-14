@@ -1,0 +1,105 @@
+<?xml version = '1.0'?>
+<!DOCTYPE sqlschema [
+	<!ENTITY rfcd_codes SYSTEM "rfcd_codes.xml">
+	<!ENTITY vrii_codes SYSTEM "vrii_codes.xml">
+	<!ENTITY author_codes SYSTEM "author_codes.xml">
+	<!ENTITY gender_codes SYSTEM "gender_codes.xml">
+	<!ENTITY month_codes SYSTEM "month_codes.xml">
+	<!ENTITY group_codes SYSTEM "group_codes.xml">
+	<!ENTITY rsc_codes SYSTEM "rsc_codes.xml">
+]>
+<sqlschema database="publications">
+   &gender_codes;
+   &month_codes;
+   &group_codes;
+   &author_codes;
+   &vrii_codes;
+   &rfcd_codes;
+   &rsc_codes;
+ <table  name="book"
+ 			where="'first_author_stnumber=\''.$first_author_stnumber.'\''"
+ 			order="create_timestamp"
+ 			validation-displayed="(!($admin_edit))"
+ 			validation-enforced="false"
+ 			label="Book">
+  <list-type name="rfcd-list">
+  	<field name="rfcd_code" type="rfcd-type">RFCD Code</field>
+  	<field name="rfcd_split" type="tinytext" width="3" maxlength="3">% split</field>
+  </list-type>
+  <list-type name="author-list">
+  	<field name="stnumber" type="tinytext" width="10" maxlength="30" onChange="value=value.toLowerCase();">Staff/Student Number</field>
+  	<field name="surname" type="tinytext" width="20" maxlength="60">Surname</field>
+  	<field name="firstname" type="tinytext" width="20" maxlength="60">Firstname</field>
+  	<field name="author_title" type="tinytext" width="3" maxlength="5">Title</field>
+  	<field name="gender" type="gender-type">Gender</field>
+  	<field name="type" type="author-type">Type</field>
+  	<field name="school_code" type="rsc-type">School Code</field>
+  	<field name="school_org_name" type="text" width="30" maxlength="60">School or External Organization Name</field>
+  </list-type>
+  <enum-type name="book-material-type">
+  	 <value name="none"></value>
+  	 <value name="chapter">Copy of one book chapter</value>
+  	 <value name="cover">Copy of book cover</value>
+  	 <value name="intro">Copy of introduction/preface</value>
+  	 <value name="contents">Copy of table of contents</value>
+  	 <value name="name">Copy of page showing name of book</value>
+  	 <value name="editor">Copy of page showing editor of book</value>
+  	 <value name="publisher">Copy of page showing publisher of book</value>
+  	 <value name="year">Copy of page showing year published</value>
+  	 <value name="rmit">Copy of page showing work undertaken in authors capacity at RMIT</value>
+  	 <value name="frontimg">Leading image</value>
+  	 <value name="img">Image</value>
+  	 <value name="media">Media file</value>
+  	 <value name="other">Other</value>
+  </enum-type>
+  <list-type name="book-material-list" size="8">
+  	<field name="material" type="upload" width="70" maxlength="255"
+  		base="'bk'.($schema_edit_scripting?$row->code:($schema_edit_updating?$code:($schema_edit_inserting?$schema_edit_insert_id+1:0)))"
+  		fixed="($admin_edit)">Material to Upload</field>
+  	<field name="material_kind" type="book-material-type" fixed="($admin_edit)">Type</field>
+  	<field name="material_checked" type="bool" hidden="true" value="false">Checked</field>
+  </list-type>
+  <field name="code" type="integer" hidden="true" qualifiers="not null auto_increment primary key" key="primary"></field>
+  <field name="first_author_stnumber" type="tinytext" hidden="true">Principle Author</field>
+  <field name="title" type="tinytext" width="80" maxlength="200" key="secondary">Book title</field>
+  <field name="publisher" type="tinytext" width="30" maxlength="100">Publisher</field>
+  <field name="publication_place" type="tinytext" width="30" maxlength="100">Place of Publication</field>
+  <field name="publication_year" type="tinytext" value="2005" width="4" maxlength="4">Publication Year</field>
+  <field name="publication_month" type="month-type" value="none">Publication Month (if relevant)</field>
+  <field name="isbn" type="tinytext" width="10" maxlength="30" key="secondary">ISBN</field>
+  <field name="keywords" type="tinytext" width="80" maxlength="250">Keywords (space separated)</field>
+  <field name="author" type="author-list">Book Authors</field>
+  <field name="rfcd" type="rfcd-list">Research Fields of Book</field>
+  <field name="vrii" type="vrii-type">Virtual Research Innovation Institution (VRII)</field>
+  <field name="material" type="book-material-list">Supporting materials</field>
+  <field name="research_group" type="research-group-type">Research Group (if applicable)</field>
+  <field name="description" type="text" width="70" height="6">Description of paper</field>
+  <field name="web" type="tinytext" width="40" maxlength="140">Web Address For Related Materials (if relevant)</field>
+  <field name="first_author_checked" type="bool" fixed="false" hidden="true">Principal RMIT Author Check</field>
+  <field name="school_checked" type="bool" fixed="(!($admin_edit))">School Check</field>
+  <field name="school_comment" type="text" width="70" height="6" fixed="(!($admin_edit))">School Comments</field>
+  <field name="portfolio_checked" type="bool" fixed="(!($admin_edit))">Portfolio Check</field>
+  <field name="portfolio_comment" type="text" width="70" height="6" fixed="(!($admin_edit))">Portfolio Comments</field>
+  <field name="create_timestamp" type="datetime" hidden="true" fixed="true" expression="($edAction=='Insert item')?date('YmdHis'):NULL"></field>
+  <field name="edit_timestamp" type="datetime" hidden="true" fixed="true" expression="date('YmdHis')"></field>
+  <validation>
+  	I, as the first named RMIT author of this book, confirm the following:
+    <ol>
+      <li>This publication meets the DEST definition of research.</li>
+      <li>This publication was published in 2005.</li>
+      <li>The research for this publication was undertaken in my capacity as a staff member or student of RMIT University.</li>
+      <li>This publication is a major work of scholarship.</li>
+      <li>This publication was written entirely by a single author, or jointly by authors who share responsibility for the whole book.</li>
+      <li>This is the first time this publication has been submitted for inclusion in the DEST Research Publications Collection and that it is mainly unpublished material, making a substantial contribution to knowledge.</li>
+      <li>This publication was published by a commercial publisher.</li>
+      <li>This publication is offered for sale:<ol>
+          <li>for hard copies - bound; or</li>
+          <li>for CD-ROMs - packaged; or</li>
+          <li>for e-books - on a subscription or fee basis.</li>
+        </ol>
+      </li>
+      <li>This publication has an ISBN (International Standard Book Number)</li>
+    </ol>
+  </validation>
+ </table>
+</sqlschema>

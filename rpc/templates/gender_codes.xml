@@ -1,0 +1,4 @@
+  <enum-type name="gender-type" fixed="true">
+  	 <value name="M">Male</value>
+  	 <value name="F">Female</value>
+  </enum-type>

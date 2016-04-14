@@ -1,0 +1,7 @@
+  <enum-type name="vrii-type">
+  	 <value name="unaligned">Not Aligned</value>
+  	 <value name="biotechnology">Biotechnology</value>
+  	 <value name="sustainability">Global Sustainability</value>
+  	 <value name="globalisation">Globalisation</value>
+  	 <value name="information">ICT Interactive Information</value>
+  </enum-type>

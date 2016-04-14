@@ -1,0 +1,35 @@
+<?xml version = '1.0'?>
+<!DOCTYPE sqlschema []>
+<sqlschema database="publications">
+ <table  name="journal_info"
+ 			order="publisher,journal_name"
+ 			label="Journal Info"
+ 			editorpagesize="20">
+  <enum-type name="journal-impact-type" extensible="($admin_edit)" label="impact type">
+  	<documentation>The impact types represent different sets of value weightings placed on each particular
+  	conference. The standard system of such values is the ISI impact factor. Other similar factors exist, though
+  	none so widely recognised. The value field for this type is used by the quanta tracking system. For allocating
+  	different sets and systems of journal/conference weightings.</documentation>
+  	 <value name="none"></value>
+  	 <value name="isi">ISI Impact Factor</value>
+  </enum-type>
+  <list-type name="journal-impact-list" size="4">
+  	<field name="impact_type" type="journal-impact-type">Type</field>
+  	<field name="impact_factor" type="float">Impact factor</field>
+  </list-type>
+  <field name="code" type="integer" hidden="true" qualifiers="not null auto_increment primary key" key="primary"></field>
+  <field name="journal_name" type="tinytext"  width="60" maxlength="100" key="secondary">Journal Title</field>
+  <field name="publisher" type="tinytext" width="40" maxlength="100" key="secondary">Publisher</field>
+  <field name="publication_place" type="tinytext" width="30" maxlength="100">Place of Publication</field>
+  <field name="issn" type="tinytext" width="10" maxlength="30" key="secondary">ISSN</field>
+  <field name="impact" type="journal-impact-list">Impact factor of journal.<documentation>The standard impact factor
+  	is that collated by ISI. Other values (including internally specified metrics) may also be added here.
+  	The tag value will be used to apply a metric for a journal when tracking research quanta. Not all journals
+  	are tracked by ISI (their algorithm can only be applied to journals tracked for 3 years). In the absence of any particular
+  	impact factor, the system will assume (generously) an impact factor of 1.0 ... unless you give a value here.</documentation></field>
+  <field name="web" type="tinytext" width="70" maxlength="140">Web Address For Publication (If applicable)</field>
+  <field name="description" type="text" width="70" height="6">Description of Journal</field>
+  <field name="create_timestamp" type="datetime" hidden="true" fixed="true" expression="($edAction=='Insert item')?date('YmdHis'):NULL"></field>
+  <field name="edit_timestamp" type="datetime" hidden="true" fixed="true" expression="date('YmdHis')"></field>
+ </table>
+</sqlschema>

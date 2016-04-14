@@ -1,0 +1,50 @@
+<?xml version = '1.0'?>
+<!DOCTYPE sqlschema [
+]>
+<sqlschema database="dest">
+ <table  name="bookings"
+ 			order="create_timestamp"
+ 			validation-displayed="false"
+ 			validation-enforced="false"
+ 			label="Equipment"
+ 			completionScript="common/jx_complete.js">
+  <field name="code" type="integer" hidden="true" qualifiers="not null auto_increment primary key" key="primary" ></field>
+  <field name="user_code" type="integer" value="-1" hidden="true"></field>
+  <field name="user_id" type="tinytext" width="10" maxlength="200" key="secondary"
+ 			completionClass="jxComplete"
+ 			matchUrlPath="completion.php"
+  			matchCompare="firstname,surname,stnumber"
+  			matchComplete="user_id=stnumber,user_code=code"
+  			matchLabel="$row->title.' '.$row->firstname.' '.$row->surname"
+  			matchUrlMatchField="match_field"
+  			matchUrlFetchField="fetch_field"
+  			matchUrlValueField="match_text"
+  			matchQueryBase="'table=people&amp;fetch_field[]=title&amp;fetch_field[]=firstname&amp;fetch_field[]=surname&amp;where_extra='.urlencode('kind!=\'admin\'')"
+  		>User<documentation>Please set this value using the autocomplete dropdown menu, as doing this will
+  		set a hidden field with the unique 'true' internal identifier of the user</documentation></field>
+  <field name="device_code" type="integer" value="-1" hidden="true"></field>
+  <field name="device_name" type="tinytext" width="20" maxlength="200" key="secondary"
+ 			completionClass="jxComplete"
+ 			matchUrlPath="completion.php"
+  			matchCompare="name,full_name"
+  			matchComplete="device_name=name,device_code=code,book_for=booking_slot_size"
+  			matchLabel="$row->name.' ('.$row->full_name.' '.$row->location.')'"
+  			matchUrlMatchField="match_field"
+  			matchUrlFetchField="fetch_field"
+  			matchUrlValueField="match_text"
+  			matchQueryBase="'table=equipment&amp;fetch_field[]=full_name&amp;fetch_field[]=location&amp;where_extra='.urlencode('is_active and needs_booking')"
+  		>Apparatus Name<documentation>Please set this value using the autocomplete dropdown menu, as doing this will
+  		set a hidden field with the unique 'true' internal identifier of the apparatus</documentation></field>
+  <field name="book_at" type="datetime" key="secondary">When<documentation>When the booking is for.</documentation></field>
+  <field name="book_for" type="int" midval="''" minval="1" maxval="1440" width="17" maxlength="4">Duration<documentation>How long the booking is for (in Minutes).</documentation></field>
+  <field name="purpose" type="text" width="45" height="1">Purpose<documentation>Intended purpose for this booking.</documentation></field>
+  <field name="comment" type="text" width="45" height="1">Comment<documentation>Comment on the results/state of machinery for this session (on or after the session, particularly
+  	if an equipment failure meant the session couldn't happen.</documentation></field>
+  <field name="checked_in" type="bool" value="false" hidden="false" fixed="false">Checked In<documentation>Indicates that this
+  	booking was actually used. Ideally this should be set from the booking sheet</documentation></field>
+  <field name="needs_attention" type="bool">Device needs attention<documentation>Indicates that there is a problem with the
+  	machinery, or an expendable associated with it needs replenishing.</documentation></field>
+  <field name="edit_timestamp" type="datetime" hidden="true" fixed="true" expression="date('YmdHis')"></field>
+  <field name="create_timestamp" type="datetime" hidden="true" fixed="true" expression="($schemaEditAction=='Insert item')?date('YmdHis'):NULL"></field>
+ </table>
+</sqlschema>

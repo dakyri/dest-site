@@ -1,0 +1,84 @@
+code:1
+name:Clean Room 1
+location:12.9.27, RMIT Swanston st Building
+supervisor:
+phone:4312 4312
+paragraph:Some%20details%20on%20the%20clean%20room%201&Some%20more%20details%20on%20the%20clean%20room%201&
+image:Clean room activities sm.jpg&&
+image_align:right&center&center
+image_caption:Someone%20else%27s%20lab&&
+edit_timestamp:2006-08-25 00:18:11
+create_timestamp:2006-08-24 00:03:18
+
+code:2
+name:Clean Room 2
+location:12.9.27, RMIT Swanston st Building
+supervisor:
+phone:4312 4312
+paragraph:Some%20details%20on%20the%20clean%20room%202&Some%20more%20details%20on%20the%20clean%20room%202&
+image:clean_room.jpg&&
+image_align:right&center&center
+image_caption:Someone%20else%27s%20lab&&
+edit_timestamp:2006-08-25 00:18:23
+create_timestamp:2006-08-24 00:07:56
+
+code:3
+name:Vaccuum Lab
+location:12.9.27, RMIT Swanston st Building
+supervisor:
+phone:
+paragraph:Some%20details%20on%20the%20vacuum%20lab&Some%20more%20details%20on%20the%20vaccum%20lab&
+image:deposition-lab.JPG&&
+image_align:right&center&center
+image_caption:Someone%20else%27s%20lab&&
+edit_timestamp:2006-08-25 00:16:01
+create_timestamp:2006-08-24 00:08:19
+
+code:4
+name:Microfluidics Lab
+location:12.9.27, RMIT Swanston st Building
+supervisor:
+phone:4312 4312
+paragraph:Some%20details%20on%20the%20microfluidics%20lab&&
+image:lab-on-a-chip.jpg&&
+image_align:right&center&center
+image_caption:Someone%20else%27s%20lab&&
+edit_timestamp:2006-08-24 23:53:11
+create_timestamp:2006-08-24 00:08:30
+
+code:6
+name:Packaging Laboratory
+location:
+supervisor:
+phone:
+paragraph:&&
+image:&&
+image_align:center&center&center
+image_caption:&&
+edit_timestamp:2006-08-24 23:28:46
+create_timestamp:2006-08-24 23:28:46
+
+code:7
+name:Sensor Technology Laboratory
+location:
+supervisor:
+phone:
+paragraph:&&
+image:&&
+image_align:center&center&center
+image_caption:&&
+edit_timestamp:2006-08-24 23:29:16
+create_timestamp:2006-08-24 23:29:16
+
+code:8
+name:Intagrated Optics Laboratory
+location:
+supervisor:
+phone:
+paragraph:&&
+image:&&
+image_align:center&center&center
+image_caption:&&
+edit_timestamp:2006-08-24 23:30:06
+create_timestamp:2006-08-24 23:30:06
+
